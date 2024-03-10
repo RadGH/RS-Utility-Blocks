@@ -1,0 +1,13 @@
+{
+  "name": "rs-utility-blocks/user-field",
+  "title": "User Field",
+  "description": "Display information from the current user's account.",
+  "style": [ "file:./user-field.css" ],
+  "category": "common",
+  "icon": "admin-users",
+  "keywords": [ "user" ],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "user-field.php"
+  }
+}

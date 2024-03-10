@@ -1,0 +1,23 @@
+{
+  "name": "rs-utility-blocks",
+  "version": "1.0.0",
+  "main": "assets/scripts/src/rs-utility-block-editor.js",
+  "devDependencies": {
+    "@wordpress/block-editor": "^12.21.0",
+    "@wordpress/blocks": "^12.30.0",
+    "@wordpress/components": "^27.1.0",
+    "@wordpress/compose": "^6.30.0",
+    "@wordpress/dom-ready": "^3.53.0",
+    "@wordpress/edit-post": "^7.30.0",
+    "@wordpress/element": "^5.30.0",
+    "@wordpress/hooks": "^3.53.0",
+    "@wordpress/icons": "^9.44.0",
+    "@wordpress/plugins": "^6.21.0",
+    "@wordpress/rich-text": "^6.30.0",
+    "@wordpress/scripts": "^27.4.0"
+  },
+  "scripts": {
+    "build": "wp-scripts build assets/scripts/src/rs-utility-block-editor.js --output-path=./assets/scripts/dist/",
+    "start": "wp-scripts start assets/scripts/src/rs-utility-block-editor.js --output-path=./assets/scripts/dist/"
+  }
+}

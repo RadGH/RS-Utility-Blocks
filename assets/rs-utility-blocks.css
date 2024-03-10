@@ -1,0 +1,105 @@
+/* ACF custom classes */
+.acf-field.acf-hide-label > .acf-label,
+.acf-field.acf-hide-label.acf-field-clone .acf-clone-fields > .acf-field > .acf-label {
+	display: none;
+}
+
+.acf-field.acf-no-padding > .acf-input > .acf-fields > .acf-field {
+	padding: 0;
+}
+
+.acf-field.acf-no-side-padding > .acf-input > .acf-fields > .acf-field {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.acf-field.acf-no-border,
+.acf-field.acf-no-border > .acf-input > .acf-fields {
+	border: none;
+}
+/* End: ACF custom classes */
+
+/*
+Visibility setting for blocks
+
+Body classes (from theme-setup.php):
+- front-end
+- user-is-logged-in
+- user-not-logged-in
+- user-is-admin
+- user-not-admin
+
+eg: body.front-end.user-is-logged-in {}
+
+Block classes (from visibility.js):
+- has-visibility         - Added to blocks that have any visibility condition selected
+- hide-always            - Always hide
+- hide-on-mobile         - Hide on mobile
+- hide-on-desktop        - Hide on desktop
+- hide-if-logged-in      - Hide if logged in
+- hide-if-not-logged-in  - Hide if logged out
+- hide-if-user-admin     - Hide if user is admin
+- hide-if-user-not-admin - Hide if not user is admin
+*/
+
+/* Element Visibility - Front end: Hide elements */
+body.front-end .hide-always { display: none !important; }
+body.front-end.user-is-logged-in .hide-if-logged-in { display: none !important; }
+body.front-end.user-not-logged-in .hide-if-not-logged-in { display: none !important; }
+
+body.front-end.user-is-admin .hide-if-user-admin { display: none !important; }
+body.front-end.user-not-admin .hide-if-user-not-admin { display: none !important; }
+
+@media ( max-width: 780px ) {
+	/* MOBILE */
+	body.front-end .hide-on-mobile { display: none !important; }
+}
+
+@media ( min-width: 780.1px ) {
+	/* DESKTOP */
+	body.front-end .hide-on-desktop { display: none !important; }
+}
+
+/* Element Visibility - Back end: Show indicator explaining element is hidden */
+body:not(.front-end) .has-visibility,
+body:not(.front-end) .block-editor-block-list__layout .block-editor-block-list__block.has-visibility {
+	display: block !important;
+	position: relative;
+	outline: 2px dashed #666666;
+	outline-offset: 2px;
+}
+
+body:not(.front-end) .has-visibility::before {
+	content: 'Visibility';
+	position: absolute;
+	top: calc( 100% + 2px );
+	right: -4px;
+	z-index: 100;
+	white-space: nowrap;
+	background: rgba(128,128,128,0.5);
+	color: #ffffff;
+	font-size: 12px;
+	padding: 5px 10px;
+	border-radius: 0 0 10px 10px;
+}
+
+body:not(.front-end) .has-visibility:where(.is-selected, .is-highlighted) {
+	outline-color: #007cba !important;
+}
+
+body:not(.front-end) .has-visibility:where(.is-selected, .is-highlighted)::before {
+	background: #007cba;
+}
+
+body:not(.front-end) .has-visibility:not(.is-selected)::before {
+	font-size: 8px;
+	padding: 5px 5px;
+}
+
+body:not(.front-end) .is-selected.has-visibility.hide-always::before            { content: 'Visibility: Always Hidden'; }
+body:not(.front-end) .is-selected.has-visibility.hide-if-logged-in::before      { content: 'Visibility: Logged Out'; }
+body:not(.front-end) .is-selected.has-visibility.hide-if-not-logged-in::before  { content: 'Visibility: Logged In'; }
+body:not(.front-end) .is-selected.has-visibility.hide-if-user-admin::before     { content: 'Visibility: Non-Admin'; }
+body:not(.front-end) .is-selected.has-visibility.hide-if-user-not-admin::before { content: 'Visibility: Admin-Only'; }
+body:not(.front-end) .is-selected.has-visibility.hide-on-mobile::before         { content: 'Visibility: Desktop Only'; }
+body:not(.front-end) .is-selected.has-visibility.hide-on-desktop::before        { content: 'Visibility: Mobile Only'; }
