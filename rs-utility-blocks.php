@@ -19,7 +19,6 @@ class RS_Utility_Blocks {
 	 * @return void
 	 */
 	public static function load_plugin() {
-		/*
 		// 1. Check for required plugins
 		$missing_plugins = array();
 		
@@ -29,12 +28,14 @@ class RS_Utility_Blocks {
 		
 		// Show error on the dashboard if any plugins are missing
 		if ( $missing_plugins ) {
-			self::add_admin_notice( 'The following plugins are required: '. implode(', ', $missing_plugins) . '.', 'error' );
+			self::add_admin_notice( '<strong>RS Utility Blocks:</strong> The following plugins are required: '. implode(', ', $missing_plugins) . '.', 'error' );
 			return;
 		}
-		*/
 		
-		// 2. Load plugin files
+		// 2. Load ACF fields
+		require_once( RS_Utility_Blocks_PATH . '/includes/acf-fields.php' );
+		
+		// 3. Load plugin files
 		require_once( RS_Utility_Blocks_PATH . '/includes/setup.php' );
 		RS_Utility_Blocks_Setup::init();
 		
@@ -49,7 +50,6 @@ class RS_Utility_Blocks {
 	 *
 	 * @return void
 	 */
-	/*
 	public static function add_admin_notice( $message, $type = 'info', $format = true ) {
 		add_action( 'admin_notices', function() use ( $message, $type, $format ) {
 			?>
@@ -59,7 +59,6 @@ class RS_Utility_Blocks {
 			<?php
 		});
 	}
-	*/
 	
 }
 

@@ -1,0 +1,187 @@
+<?php
+
+add_action( 'acf/include_fields', function() {
+	if ( ! function_exists( 'acf_add_local_field_group' ) ) {
+		return;
+	}
+	
+	acf_add_local_field_group( array(
+		'key' => 'group_65ee276b37a9f',
+		'title' => 'User Field',
+		'fields' => array(
+			array(
+				'key' => 'field_65ee276b1579b',
+				'label' => 'Display Field',
+				'name' => 'user_profile_display_field',
+				'aria-label' => '',
+				'type' => 'select',
+				'instructions' => '',
+				'required' => 0,
+				'conditional_logic' => 0,
+				'wrapper' => array(
+					'width' => '',
+					'class' => 'acf-no-label',
+					'id' => '',
+				),
+				'choices' => array(
+					'ID' => 'ID',
+					'user_login' => 'Username',
+					'user_nicename' => 'Nicename',
+					'user_email' => 'Email',
+					'user_url' => 'URL',
+					'display_name' => 'Display Name',
+					'first_name' => 'First Name',
+					'last_name' => 'Last Name',
+					'description' => 'Description',
+					'nickname' => 'Nickname',
+					'role' => 'Role',
+					'avatar' => 'Avatar',
+					'logout' => 'Sign Out',
+				),
+				'default_value' => 'display_name',
+				'return_format' => 'value',
+				'multiple' => 0,
+				'allow_null' => 1,
+				'ui' => 0,
+				'ajax' => 0,
+				'placeholder' => '',
+			),
+			array(
+				'key' => 'field_65ee2ca65d13d',
+				'label' => 'Create Link',
+				'name' => 'create_link',
+				'aria-label' => '',
+				'type' => 'true_false',
+				'instructions' => '',
+				'required' => 0,
+				'conditional_logic' => 0,
+				'wrapper' => array(
+					'width' => '',
+					'class' => 'acf-hide-label',
+					'id' => '',
+				),
+				'message' => 'Link to this field',
+				'default_value' => 0,
+				'ui' => 0,
+				'ui_on_text' => '',
+				'ui_off_text' => '',
+			),
+			array(
+				'key' => 'field_65ee3410e76cf',
+				'label' => 'New Tab',
+				'name' => 'new_tab',
+				'aria-label' => '',
+				'type' => 'true_false',
+				'instructions' => '',
+				'required' => 0,
+				'conditional_logic' => array(
+					array(
+						array(
+							'field' => 'field_65ee2ca65d13d',
+							'operator' => '==',
+							'value' => '1',
+						),
+					),
+				),
+				'wrapper' => array(
+					'width' => '',
+					'class' => 'acf-hide-label',
+					'id' => '',
+				),
+				'message' => 'Open link in new tab',
+				'default_value' => 0,
+				'ui' => 0,
+				'ui_on_text' => '',
+				'ui_off_text' => '',
+			),
+			array(
+				'key' => 'field_65ee2cd392752',
+				'label' => 'Link Type',
+				'name' => 'link_type',
+				'aria-label' => '',
+				'type' => 'select',
+				'instructions' => '',
+				'required' => 0,
+				'conditional_logic' => array(
+					array(
+						array(
+							'field' => 'field_65ee2ca65d13d',
+							'operator' => '==',
+							'value' => '1',
+						),
+					),
+				),
+				'wrapper' => array(
+					'width' => '',
+					'class' => '',
+					'id' => '',
+				),
+				'choices' => array(
+					'profile' => 'Edit Profile',
+					'author_url' => 'Author URL',
+					'user_url' => 'User Website',
+					'logout' => 'Sign Out',
+					'custom' => 'Custom URL',
+				),
+				'default_value' => false,
+				'return_format' => 'value',
+				'multiple' => 0,
+				'allow_null' => 1,
+				'ui' => 0,
+				'ajax' => 0,
+				'placeholder' => '',
+			),
+			array(
+				'key' => 'field_65ee2e1892753',
+				'label' => 'Custom URL',
+				'name' => 'custom_url',
+				'aria-label' => '',
+				'type' => 'text',
+				'instructions' => '',
+				'required' => 0,
+				'conditional_logic' => array(
+					array(
+						array(
+							'field' => 'field_65ee2ca65d13d',
+							'operator' => '==',
+							'value' => '1',
+						),
+						array(
+							'field' => 'field_65ee2cd392752',
+							'operator' => '==',
+							'value' => 'custom',
+						),
+					),
+				),
+				'wrapper' => array(
+					'width' => '',
+					'class' => '',
+					'id' => '',
+				),
+				'default_value' => '',
+				'maxlength' => '',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+			),
+		),
+		'location' => array(
+			array(
+				array(
+					'param' => 'block',
+					'operator' => '==',
+					'value' => 'rs-utility-blocks/user-field',
+				),
+			),
+		),
+		'menu_order' => 0,
+		'position' => 'normal',
+		'style' => 'default',
+		'label_placement' => 'top',
+		'instruction_placement' => 'label',
+		'hide_on_screen' => '',
+		'active' => true,
+		'description' => 'ACF Block',
+		'show_in_rest' => 0,
+	) );
+} );
