@@ -1,11 +1,11 @@
 {
-  "name": "rs-utility-blocks/user-field",
-  "title": "User Field",
-  "description": "Display information from the current user's account.",
+  "name": "rs-utility-blocks/post-field",
+  "title": "Post Field",
+  "description": "Display a field from the current post.",
   "style": [],
   "category": "common",
-  "icon": "admin-users",
-  "keywords": [ "user" ],
+  "icon": "admin-post",
+  "keywords": [ "post" ],
   "supports": {
     "align": true,
     "anchor": true,
@@ -33,6 +33,6 @@
   },
   "acf": {
     "mode": "preview",
-    "renderTemplate": "user-field.php"
+    "renderTemplate": "post-field.php"
   }
 }

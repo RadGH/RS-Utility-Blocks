@@ -2,14 +2,14 @@
 /*
 Plugin Name: RS Utility Blocks
 Description: Adds custom blocks and utilities to the block editor, including visibility conditions and blocks to display the current user's information.
-Version: 1.0.0
+Version: 1.1.0
 Author: Radley Sustaire
 Author URI: https://radleysustaire.com
 */
 
 define( 'RS_Utility_Blocks_PATH', __DIR__ );
 define( 'RS_Utility_Blocks_URL', plugin_dir_url(__FILE__) );
-define( 'RS_Utility_Blocks_VERSION', '1.0.0' );
+define( 'RS_Utility_Blocks_VERSION', '1.1.0' );
 
 class RS_Utility_Blocks {
 	

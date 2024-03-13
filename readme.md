@@ -15,13 +15,19 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.txt
 
 This plugin adds several blocks and utilities to the block editor, including visibility conditions and blocks to display the current user's information.
 
-### Custom Blocks
-
-- **User Profile** - Allows you to display a field from a user's profile, including their name, email, logout url, and other fields.
-
 ### Block Settings
 
-- **Visibility** - Allows you to control the visibility of a block based on if the user is logged in, on a desktop or mobile, or if the user is an administrator.
+- **Visibility** - Allows you to control the visibility of a block based on if the user is logged in, on a desktop or mobile, or if the user is an administrator. Available to most blocks.
+
+![Screenshot of the "Visibility" blocks settings including toggles to hide on mobile, desktop, if logged in or out, or if admin or not an admin.](screenshot-1.png)
+
+### Custom Blocks
+
+- **Post Field** - Allows you to display fields for a post including: Post title, content, excerpt, date, author, and more.
+
+- **User Field** - Allows you to display a field from a user's profile, including their name, email, logout url, and other fields.
+
+![Screenshot of the "User Field" block showing available options](screenshot-2.png)
 
 ## Development Setup
 

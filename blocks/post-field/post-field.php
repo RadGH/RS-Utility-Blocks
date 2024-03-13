@@ -10,9 +10,11 @@
  * @global   array $context The context provided to the block by the post or it's parent block.
  */
 
-$user_id = get_current_user_id();
+$post_id = get_the_ID();
 
-$display_field = get_field( 'user_profile_display_field', $block['id'] );
+$post = get_post($post_id);
+
+$display_field = get_field( 'post_display_field', $block['id'] );
 $create_link = get_field( 'create_link', $block['id'] );
 $new_tab = get_field( 'new_tab', $block['id'] );
 $link_type = get_field( 'link_type', $block['id'] );
@@ -22,13 +24,13 @@ $apply_formatting = get_field( 'apply_formatting', $block['id'] );
 // Custom field key is only used if display_field is set to "custom_field"
 $custom_field_key = get_field( 'custom_field_key', $block['id'] );
 
-$value = RS_Utility_Blocks_Setup::get_user_field( $user_id, $display_field, $custom_field_key );
+$value = RS_Utility_Blocks_Setup::get_post_field( $post, $display_field, $custom_field_key );
 
-$url = $create_link ? RS_Utility_Blocks_Setup::get_user_link( $user_id, $link_type, $custom_url, $new_tab ) : false;
+$url = $create_link ? RS_Utility_Blocks_Setup::get_post_link( $post, $link_type, $custom_url, $new_tab ) : false;
 
 // Use a <div> if paragraph formatting is applied. Allow filtering.
 $html_element = ( $apply_formatting ) ? 'div' : 'span';
-$html_element = apply_filters( 'rs/user_field_element', $html_element, $user_id, $display_field, $custom_field_key, $value, $url, $block );
+$html_element = apply_filters( 'rs/post_field_element', $html_element, $post_id, $display_field, $custom_field_key, $value, $url, $block );
 
 // Add additional classes
 $classes = array();
@@ -54,7 +56,7 @@ $atts = get_block_wrapper_attributes( $atts );
 
 echo '<'. $html_element .' '. $atts .'>';
 
-if ( $user_id && $value ) {
+if ( $post_id && $value ) {
 	
 	if ( $url ) {
 		
