@@ -9,6 +9,7 @@ class RS_Utility_Blocks_Setup {
 	 */
 	public static function init() {
 		
+		// Register (but do not enqueue) CSS and JS files
 		add_action( 'init', array( __CLASS__, 'register_all_assets' ) );
 		
 		// Enqueue assets on the front-end.
