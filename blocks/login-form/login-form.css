@@ -1,0 +1,41 @@
+.disable-form.rs-utility-login-form {
+	position: relative;
+	user-select: none;
+}
+
+.disable-form.rs-utility-login-form::before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 100;
+}
+
+@media ( min-width: 780px ) {
+	.rs-utility-login-form.apply-styles form p.login-username,
+	.rs-utility-login-form.apply-styles form p.login-password,
+	.rs-utility-login-form.apply-styles form p.login-remember {
+		display: grid;
+		gap: 20px;
+		grid-template-columns: 120px 1fr;
+	}
+
+	.rs-utility-login-form.apply-styles.action-lostpassword form p.login-username {
+		grid-template-columns: auto 1fr;
+	}
+
+	.rs-utility-login-form.apply-styles form p.login-forgot-password,
+	.rs-utility-login-form.apply-styles form p.login-register-link,
+	.rs-utility-login-form.apply-styles form p.login-sign-in,
+	.rs-utility-login-form.apply-styles form p.submit  {
+		text-align: center;
+	}
+
+	.rs-utility-login-form.apply-styles form p.login-remember label {
+		grid-column: 2 / 3;
+	}
+
+}

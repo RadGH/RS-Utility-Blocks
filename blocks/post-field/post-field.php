@@ -10,8 +10,6 @@
  * @global   array $context The context provided to the block by the post or it's parent block.
  */
 
-$post_id = get_the_ID();
-
 $post = get_post($post_id);
 
 $display_field = get_field( 'post_display_field', $block['id'] );

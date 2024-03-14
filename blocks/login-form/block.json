@@ -1,0 +1,38 @@
+{
+  "name": "rs-utility-blocks/login-form",
+  "title": "Login Form",
+  "description": "Displays a login form for users to log in to the site.",
+  "style": ["file:./login-form.css"],
+  "category": "common",
+  "icon": "admin-network",
+  "keywords": [ "login", "form", "user" ],
+  "supports": {
+    "align": true,
+    "anchor": true,
+    "customClassName": true,
+    "layout": false,
+    "spacing": {
+      "margin": true,
+      "padding": true,
+      "blockGap": [ "horizontal", "vertical" ]
+    },
+    "typography": {
+      "fontSize": true,
+      "lineHeight": true,
+      "FontFamily": true,
+      "FontWeight": true,
+      "FontStyle": true,
+      "TextTransform": true,
+      "LetterSpacing": true,
+      "__experimentalFontFamily": true,
+      "__experimentalFontWeight": true,
+      "__experimentalFontStyle": true,
+      "__experimentalTextTransform": true,
+      "__experimentalLetterSpacing": true
+    }
+  },
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "login-form.php"
+  }
+}

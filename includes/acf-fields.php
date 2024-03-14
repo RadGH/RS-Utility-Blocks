@@ -6,6 +6,88 @@ add_action( 'acf/include_fields', function() {
 	}
 	
 	acf_add_local_field_group( array(
+		'key' => 'group_65f2e54f471c2',
+		'title' => 'Login Form',
+		'fields' => array(
+			array(
+				'key' => 'field_65f2e54f00886',
+				'label' => 'Settings',
+				'name' => 'settings',
+				'aria-label' => '',
+				'type' => 'checkbox',
+				'instructions' => '',
+				'required' => 0,
+				'conditional_logic' => 0,
+				'wrapper' => array(
+					'width' => '',
+					'class' => '',
+					'id' => '',
+				),
+				'choices' => array(
+					'show_forgot_password' => 'Show forgot password',
+					'show_logout_link' => 'Show logout link (if logged in)',
+					'show_register_link' => 'Show create account link',
+					'disable_custom_style' => 'Disable custom styles',
+				),
+				'default_value' => array(
+				),
+				'return_format' => 'value',
+				'allow_custom' => 0,
+				'layout' => 'vertical',
+				'toggle' => 0,
+				'save_custom' => 0,
+				'custom_choice_button_text' => 'Add new choice',
+			),
+			array(
+				'key' => 'field_65f2e57f00887',
+				'label' => 'Create Account URL',
+				'name' => 'create_account_url',
+				'aria-label' => '',
+				'type' => 'text',
+				'instructions' => '',
+				'required' => 0,
+				'conditional_logic' => array(
+					array(
+						array(
+							'field' => 'field_65f2e54f00886',
+							'operator' => '==',
+							'value' => 'show_register_link',
+						),
+					),
+				),
+				'wrapper' => array(
+					'width' => '',
+					'class' => '',
+					'id' => '',
+				),
+				'default_value' => '',
+				'maxlength' => '',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+			),
+		),
+		'location' => array(
+			array(
+				array(
+					'param' => 'block',
+					'operator' => '==',
+					'value' => 'rs-utility-blocks/login-form',
+				),
+			),
+		),
+		'menu_order' => 0,
+		'position' => 'normal',
+		'style' => 'default',
+		'label_placement' => 'top',
+		'instruction_placement' => 'label',
+		'hide_on_screen' => '',
+		'active' => true,
+		'description' => 'ACF Block',
+		'show_in_rest' => 0,
+	) );
+	
+	acf_add_local_field_group( array(
 		'key' => 'group_65f2327831337',
 		'title' => 'Post Field',
 		'fields' => array(

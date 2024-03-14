@@ -101,6 +101,8 @@ class RS_Utility_Blocks_Setup {
 		
 		register_block_type( RS_Utility_Blocks_PATH . '/blocks/post-field/block.json');
 		
+		register_block_type( RS_Utility_Blocks_PATH . '/blocks/login-form/block.json');
+		
 	}
 	
 	/**
