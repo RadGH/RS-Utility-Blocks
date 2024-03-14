@@ -20,9 +20,15 @@ $disable_custom_style = in_array('disable_custom_style', $settings);
 
 $create_account_url = get_field( 'create_account_url', $block['id'] );
 
+$login_redirect = get_field( 'login_redirect', $block['id'] );
+
 // Get action
 $action = isset( $_REQUEST['action'] ) ? stripslashes($_REQUEST['action']) : 'login';
 $redirect_to = ! empty( $_REQUEST['redirect_to'] ) ? $_REQUEST['redirect_to'] : '';
+
+if ( $login_redirect && ! $redirect_to ) {
+	$redirect_to = $login_redirect;
+}
 
 // Other Variables
 $classes = array( 'rs-utility-login-form' );
@@ -109,7 +115,7 @@ switch( $action ) {
 	case 'login':
 		$args = array(
 			'echo' => false,
-			'redirect' => site_url( $_SERVER['REQUEST_URI'] ),
+			'redirect' => $redirect_to,
 			'form_id' => 'loginform',
 			'label_username' => __( 'Username' ),
 			'label_password' => __( 'Password' ),

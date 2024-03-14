@@ -16,8 +16,7 @@
 
 @media ( min-width: 780px ) {
 	.rs-utility-login-form.apply-styles form p.login-username,
-	.rs-utility-login-form.apply-styles form p.login-password,
-	.rs-utility-login-form.apply-styles form p.login-remember {
+	.rs-utility-login-form.apply-styles form p.login-password {
 		display: grid;
 		gap: 20px;
 		grid-template-columns: 120px 1fr;
@@ -30,12 +29,9 @@
 	.rs-utility-login-form.apply-styles form p.login-forgot-password,
 	.rs-utility-login-form.apply-styles form p.login-register-link,
 	.rs-utility-login-form.apply-styles form p.login-sign-in,
+	.rs-utility-login-form.apply-styles form p.login-remember,
 	.rs-utility-login-form.apply-styles form p.submit  {
 		text-align: center;
-	}
-
-	.rs-utility-login-form.apply-styles form p.login-remember label {
-		grid-column: 2 / 3;
 	}
 
 }

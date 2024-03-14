@@ -66,6 +66,26 @@ add_action( 'acf/include_fields', function() {
 				'prepend' => '',
 				'append' => '',
 			),
+			array(
+				'key' => 'field_65f2ef6272a08',
+				'label' => 'Login Redirect',
+				'name' => 'login_redirect',
+				'aria-label' => '',
+				'type' => 'text',
+				'instructions' => '',
+				'required' => 0,
+				'conditional_logic' => 0,
+				'wrapper' => array(
+					'width' => '',
+					'class' => '',
+					'id' => '',
+				),
+				'default_value' => '',
+				'maxlength' => '',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+			),
 		),
 		'location' => array(
 			array(
