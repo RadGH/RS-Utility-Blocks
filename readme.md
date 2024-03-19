@@ -29,6 +29,10 @@ This plugin adds several blocks and utilities to the block editor, including vis
 
 ![Screenshot of the "User Field" block showing available options](screenshot-2.png)
 
+## Plugin Updates
+
+This plugin is hosted on GitHub. To enable automatic plugin updates you can use the plugin [Git Updater](https://github.com/afragen/git-updater).
+
 ## Development Setup
 
 To use Javascript to compile the file in /assets/scripts/src/block-editor.js you must first install NPM, then follow these steps:
@@ -66,6 +70,12 @@ add_filter( 'rs/login_form/args', 'my_theme_login_form_args', 10, 2 );
 ```
 
 ## Changelog
+
+### 1.2.3
+* Added `GitHub Plugin URI` to enable plugin updates using Git Updater.
+
+### 1.2.2
+* Added `rs/login_form/args` filter to modify the login form args.
 
 ### 1.0.0
 * Initial release
