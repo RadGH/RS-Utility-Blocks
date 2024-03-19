@@ -49,6 +49,22 @@ To use Javascript to compile the file in /assets/scripts/src/block-editor.js you
 
 > npm run start
 
+## Developer Actions and Filters
+
+### Login form
+
+In this example, we can disable the "Remember Me" checkbox within the Login Form block. Place this code in your theme's functions.php. To see available args, refer to [wp_login_form()](https://developer.wordpress.org/reference/functions/wp_login_form/).
+
+```php
+function my_theme_login_form_args( $args, $action = 'login' ) {
+    // Disable the "Remember Me" checkbox
+    $args['remember'] = false;
+    
+    return $args;
+}
+add_filter( 'rs/login_form/args', 'my_theme_login_form_args', 10, 2 );
+```
+
 ## Changelog
 
 ### 1.0.0

@@ -140,6 +140,8 @@ switch( $action ) {
 			$extra_html .= "\n" . $create_account_html;
 		}
 		
+		$args = apply_filters( 'rs/login_form/args', $args, $action );
+		
 		$html = wp_login_form($args);
 		
 		$html = str_replace('</form>', $extra_html . "\n\n" . '</form>', $html );
