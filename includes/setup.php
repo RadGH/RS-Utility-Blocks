@@ -12,6 +12,9 @@ class RS_Utility_Blocks_Setup {
 		// Register (but do not enqueue) CSS and JS files
 		add_action( 'init', array( __CLASS__, 'register_all_assets' ) );
 		
+		// Enqueue assets on the dashboard.
+		add_action( 'admin_enqueue_scripts', array( __CLASS__, 'enqueue_admin_assets' ) );
+		
 		// Enqueue assets on the front-end.
 		add_action( 'wp_enqueue_scripts', array( __CLASS__, 'enqueue_public_assets' ) );
 		
@@ -46,6 +49,17 @@ class RS_Utility_Blocks_Setup {
 		// - compiled using "npm run build", see readme.md for details.
 		$asset = require( RS_Utility_Blocks_PATH . '/assets/scripts/dist/rs-utility-block-editor.asset.php' );
 		wp_register_script( 'rs-utility-blocks-block-editor', RS_Utility_Blocks_URL . 'assets/scripts/dist/rs-utility-block-editor.js', $asset['dependencies'], $asset['version'] );
+		
+	}
+	
+	/**
+	 * Enqueue assets on the wordpress dashboard (backend).
+	 *
+	 * @return void
+	 */
+	public static function enqueue_admin_assets() {
+		
+		wp_enqueue_style( 'rs-utility-blocks' );
 		
 	}
 	
