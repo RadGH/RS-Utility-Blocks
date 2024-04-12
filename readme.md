@@ -19,15 +19,17 @@ This plugin adds several blocks and utilities to the block editor, including vis
 
 - **Visibility** - Allows you to control the visibility of a block based on if the user is logged in, on a desktop or mobile, or if the user is an administrator. Available to most blocks.
 
-![Screenshot of the "Visibility" blocks settings including toggles to hide on mobile, desktop, if logged in or out, or if admin or not an admin.](screenshot-1.png)
+![Screenshot of the "Visibility" blocks settings including toggles to hide on mobile, desktop, if logged in or out, or if admin or not an admin.](screenshot-visibility-options.png)
 
 ### Custom Blocks
 
 - **Post Field** - Allows you to display fields for a post including: Post title, content, excerpt, date, author, and more.
 
+![Screenshot of the "Post Field" block showing available options](screenshot-post-field.png)
+
 - **User Field** - Allows you to display a field from a user's profile, including their name, email, logout url, and other fields.
 
-![Screenshot of the "User Field" block showing available options](screenshot-2.png)
+![Screenshot of the "User Field" block showing available options](screenshot-user-field.png)
 
 ## Plugin Updates
 
