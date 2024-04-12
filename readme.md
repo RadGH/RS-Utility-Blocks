@@ -5,8 +5,8 @@ _Adds custom blocks and utilities to the block editor, including visibility cond
 ```
 Contributors: radgh
 Requires at least: 6.0
-Tested up to: 6.4.3
-Requires PHP: 5.7
+Tested up to: 6.5.2
+Requires PHP: 8.0
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.txt
 ```
@@ -30,6 +30,14 @@ This plugin adds several blocks and utilities to the block editor, including vis
 - **User Field** - Allows you to display a field from a user's profile, including their name, email, logout url, and other fields.
 
 ![Screenshot of the "User Field" block showing available options](screenshot-user-field.png)
+
+- **Edit Profile** - Display a form to allow users to edit their name, email, password, website, and bio.
+
+![Screenshot of the "Edit Profile" block showing available options](screenshot-edit-profile-fields.png)
+
+Here is the edit profile form, as it appears on the front-end:
+
+![Screenshot of the "Edit Profile" form fields as they appear on the front-end](screenshot-edit-profile-form.png)
 
 ## Plugin Updates
 
@@ -72,6 +80,9 @@ add_filter( 'rs/login_form/args', 'my_theme_login_form_args', 10, 2 );
 ```
 
 ## Changelog
+
+### 1.2.6
+* Added edit profile block.
 
 ### 1.2.3
 * Added `GitHub Plugin URI` to enable plugin updates using Git Updater.

@@ -1,0 +1,22 @@
+.rs-field-input {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 0.5em;
+}
+
+.rs-edit-profile__fields {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 1em;
+	margin-bottom: 1.5em;
+}
+
+label.rs-field-label {
+	display: block;
+	margin-bottom: 0.25em;
+}
+
+/* First / Last name */
+.rs-field.rs-field--name .rs-field-input {
+	grid-template-columns: 1fr 1fr;
+}

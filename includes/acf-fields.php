@@ -6,6 +6,120 @@ add_action( 'acf/include_fields', function() {
 	}
 	
 	acf_add_local_field_group( array(
+		'key' => 'group_6619885838faf',
+		'title' => 'Edit Profile',
+		'fields' => array(
+			array(
+				'key' => 'field_66198857c8070',
+				'label' => 'Fields',
+				'name' => 'fields',
+				'aria-label' => '',
+				'type' => 'select',
+				'instructions' => '',
+				'required' => 0,
+				'conditional_logic' => 0,
+				'wrapper' => array(
+					'width' => '',
+					'class' => '',
+					'id' => '',
+				),
+				'choices' => array(
+					'name' => 'Name',
+					'email' => 'Email',
+					'password' => 'Password',
+					'bio' => 'Biographical Info',
+					'website' => 'Website',
+				),
+				'default_value' => array(
+					0 => 'name',
+					1 => 'email',
+					2 => 'password',
+				),
+				'return_format' => 'value',
+				'multiple' => 1,
+				'allow_null' => 0,
+				'ui' => 1,
+				'ajax' => 0,
+				'placeholder' => '',
+			),
+			array(
+				'key' => 'field_66199f4675802',
+				'label' => 'Show Confirm Email',
+				'name' => 'show_confirm_email',
+				'aria-label' => '',
+				'type' => 'true_false',
+				'instructions' => '',
+				'required' => 0,
+				'conditional_logic' => array(
+					array(
+						array(
+							'field' => 'field_66198857c8070',
+							'operator' => '==',
+							'value' => 'email',
+						),
+					),
+				),
+				'wrapper' => array(
+					'width' => '',
+					'class' => 'acf-hide-label',
+					'id' => '',
+				),
+				'message' => 'Show confirm email field',
+				'default_value' => 0,
+				'ui' => 0,
+				'ui_on_text' => '',
+				'ui_off_text' => '',
+			),
+			array(
+				'key' => 'field_6619a0a6c5e45',
+				'label' => 'Show Confirm Password',
+				'name' => 'show_confirm_password',
+				'aria-label' => '',
+				'type' => 'true_false',
+				'instructions' => '',
+				'required' => 0,
+				'conditional_logic' => array(
+					array(
+						array(
+							'field' => 'field_66198857c8070',
+							'operator' => '==',
+							'value' => 'password',
+						),
+					),
+				),
+				'wrapper' => array(
+					'width' => '',
+					'class' => 'acf-hide-label',
+					'id' => '',
+				),
+				'message' => 'Show confirm password field',
+				'default_value' => 0,
+				'ui' => 0,
+				'ui_on_text' => '',
+				'ui_off_text' => '',
+			),
+		),
+		'location' => array(
+			array(
+				array(
+					'param' => 'block',
+					'operator' => '==',
+					'value' => 'rs-utility-blocks/edit-profile',
+				),
+			),
+		),
+		'menu_order' => 0,
+		'position' => 'normal',
+		'style' => 'default',
+		'label_placement' => 'top',
+		'instruction_placement' => 'label',
+		'hide_on_screen' => '',
+		'active' => true,
+		'description' => 'ACF Block',
+		'show_in_rest' => 0,
+	) );
+	
+	acf_add_local_field_group( array(
 		'key' => 'group_65f2e54f471c2',
 		'title' => 'Login Form',
 		'fields' => array(

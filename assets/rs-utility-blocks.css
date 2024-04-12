@@ -1,4 +1,4 @@
-/* ACF custom classes */
+/* ACF custom classes rs 1.0.0 */
 .acf-field.acf-hide-label > .acf-label,
 .acf-field.acf-hide-label.acf-field-clone .acf-clone-fields > .acf-field > .acf-label,
 .acf-field.acf-hide-label.acf-field-group > .acf-input > .acf-fields > .acf-field > .acf-label {
@@ -104,3 +104,24 @@ body:not(.front-end) .is-selected.has-visibility.hide-if-user-admin::before     
 body:not(.front-end) .is-selected.has-visibility.hide-if-user-not-admin::before { content: 'Visibility: Admin-Only'; }
 body:not(.front-end) .is-selected.has-visibility.hide-on-mobile::before         { content: 'Visibility: Desktop Only'; }
 body:not(.front-end) .is-selected.has-visibility.hide-on-desktop::before        { content: 'Visibility: Mobile Only'; }
+
+
+/* RS Notices */
+.rs-notice {
+	margin: 1em 0;
+	padding: 1em;
+	background: #fff;
+	border-left: 3px solid #1491bc;
+}
+
+.rs-notice.rs-notice--error {
+	border-left-color: #be2424;
+}
+
+.rs-notice > :first-child {
+	margin-top: 0;
+}
+
+.rs-notice > :last-child {
+	margin-bottom: 0;
+}

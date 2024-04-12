@@ -51,7 +51,7 @@ $create_account_html = false;
 
 if ( $show_logout_link && $logout_text ) {
 	$login_link_html = sprintf(
-		'<p class="login-logout-link">'. $logout_text .'</p>',
+		'<p class="login-logout-link has-text-align-center">'. $logout_text .'</p>',
 		esc_attr($logout_url)
 	);
 }

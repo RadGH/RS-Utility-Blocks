@@ -1,0 +1,38 @@
+{
+  "name": "rs-utility-blocks/edit-profile",
+  "title": "Edit Profile",
+  "description": "Allow the user to edit fields from their profile.",
+  "style": ["file:./edit-profile.css"],
+  "category": "common",
+  "icon": "admin-users",
+  "keywords": [ "profile",  "edit",  "user" ],
+  "supports": {
+    "align": true,
+    "anchor": true,
+    "customClassName": true,
+    "layout": false,
+    "spacing": {
+      "margin": true,
+      "padding": true,
+      "blockGap": [ "horizontal", "vertical" ]
+    },
+    "typography": {
+      "fontSize": true,
+      "lineHeight": true,
+      "FontFamily": true,
+      "FontWeight": true,
+      "FontStyle": true,
+      "TextTransform": true,
+      "LetterSpacing": true,
+      "__experimentalFontFamily": true,
+      "__experimentalFontWeight": true,
+      "__experimentalFontStyle": true,
+      "__experimentalTextTransform": true,
+      "__experimentalLetterSpacing": true
+    }
+  },
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "edit-profile.php"
+  }
+}
