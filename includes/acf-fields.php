@@ -475,10 +475,10 @@ add_action( 'acf/include_fields', function() {
 				),
 				'message' => '<p>Developers can change the value of this block using a filter, for example:</p>
 
-<pre class="code" style="overflow: auto; padding: 5px; background: #00000010;">add_filter( \'rs/post_field/custom_field\', function( $value, $post, $display_field, $custom_field_key ) {
+<pre class="code" style="overflow: auto; padding: 5px; background: #00000010;">add_filter( \'rs/post_field\', function( $value, $post, $display_field, $custom_field_key ) {
 		// Example values:
 		// $value = null
-		// $post = WP_Post object
+		// $post_id = Post ID
 		// $display_field = "custom_field"
 		// $custom_field_key = "birthday"
 
