@@ -81,7 +81,7 @@ if ( $post_id && $value ) {
 	
 	if ( is_admin() || acf_is_block_editor() ) {
 		if ( ! $display_field ) {
-			echo '<em>Select a profile field to display</em>';
+			echo '<em>Select a post field to display</em>';
 		}else if ( ! $value ) {
 			if( $display_field === 'custom_field' ) {
 				if ( ! $custom_field_key ) {
@@ -92,7 +92,7 @@ if ( $post_id && $value ) {
 					}
 				}
 			}else{
-				echo '<em>Profile field is empty ('. $display_field .')</em>';
+				echo '<em>Post field is empty ('. $display_field .')</em>';
 			}
 		}
 	}
