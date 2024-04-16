@@ -65,7 +65,7 @@ To use Javascript to compile the file in /assets/scripts/src/block-editor.js you
 
 ## Developer Actions and Filters
 
-### Login form
+### 1. Login form args
 
 In this example, we can disable the "Remember Me" checkbox within the Login Form block. Place this code in your theme's functions.php. To see available args, refer to [wp_login_form()](https://developer.wordpress.org/reference/functions/wp_login_form/).
 
@@ -79,7 +79,57 @@ function my_theme_login_form_args( $args, $action = 'login' ) {
 add_filter( 'rs/login_form/args', 'my_theme_login_form_args', 10, 2 );
 ```
 
+### 2. User field value fallback
+
+In this example, a user field displays the user's first name. If it is blank, it falls back to the username instead.
+
+Default: (empty)
+
+Formatted: radgh
+
+```php
+function my_theme_user_first_name_fallback( $value, $user_id, $display_field, $custom_field_key ) {
+    if ( $display_field === 'first_name' && empty( $value ) ) {
+        $user = get_user_by( 'ID', $user_id );
+        if ( $user && $user->ID > 0 ) {
+            $value = $user->get('first_name') ?: $user->get('user_login');
+        }
+    }
+    
+    return $value;
+}
+add_filter( 'rs/user_field', 'my_theme_user_first_name_fallback', 10, 4 );
+```
+
+### 3. Post field with formatted date
+
+In this example, a post field displays the post's date as a relative date along with a formatted date.
+
+Default: 2024-04-07 11:05:47
+
+Formatted: "Posted 1 week ago at 11:05 am"
+
+```php
+function my_theme_post_field_date_formatting( $value, $post_id, $display_field, $custom_field_key ) {
+	if ( $display_field === 'post_date' && empty( $value ) ) {
+		$timestamp = get_post_time( 'U', false, $post_id );
+		if ( $timestamp ) {
+			$diff = human_time_diff( $timestamp );
+			$date = get_the_time( get_option( 'time_format' ), $value );
+			$value = 'Posted '. $diff .' ago at ' . $date;
+		}
+	}
+	
+	return $value;
+}
+add_filter( 'rs/post_field', 'my_theme_post_field_date_formatting', 10, 4 );
+```
+
 ## Changelog
+
+### 1.2.7
+* Added better description to each included ACF field
+* Updated readme with more example filters and better descriptions
 
 ### 1.2.6
 * Added edit profile block.
