@@ -115,7 +115,7 @@ add_action( 'acf/include_fields', function() {
 		'instruction_placement' => 'label',
 		'hide_on_screen' => '',
 		'active' => true,
-		'description' => 'ACF Block',
+		'description' => '[RS Utility Blocks] ACF Block -> Edit Profile',
 		'show_in_rest' => 0,
 	) );
 	
@@ -217,7 +217,7 @@ add_action( 'acf/include_fields', function() {
 		'instruction_placement' => 'label',
 		'hide_on_screen' => '',
 		'active' => true,
-		'description' => 'ACF Block',
+		'description' => '[RS Utility Blocks] ACF Block -> Login Form',
 		'show_in_rest' => 0,
 	) );
 	
@@ -510,7 +510,7 @@ add_action( 'acf/include_fields', function() {
 		'instruction_placement' => 'label',
 		'hide_on_screen' => '',
 		'active' => true,
-		'description' => 'ACF Block',
+		'description' => '[RS Utility Blocks] ACF Block -> Post Field',
 		'show_in_rest' => 0,
 	) );
 	
@@ -801,7 +801,7 @@ add_action( 'acf/include_fields', function() {
 		'instruction_placement' => 'label',
 		'hide_on_screen' => '',
 		'active' => true,
-		'description' => 'ACF Block',
+		'description' => '[RS Utility Blocks] ACF Block -> User Field',
 		'show_in_rest' => 0,
 	) );
 } );
