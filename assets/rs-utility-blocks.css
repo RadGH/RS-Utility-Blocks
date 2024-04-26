@@ -1,4 +1,4 @@
-/* ACF custom classes rs 1.0.0 */
+/* ACF custom classes rs 1.0.1 */
 .acf-field.acf-hide-label > .acf-label,
 .acf-field.acf-hide-label.acf-field-clone .acf-clone-fields > .acf-field > .acf-label,
 .acf-field.acf-hide-label.acf-field-group > .acf-input > .acf-fields > .acf-field > .acf-label {
@@ -17,6 +17,10 @@
 .acf-field.acf-no-border,
 .acf-field.acf-no-border > .acf-input > .acf-fields {
 	border: none;
+}
+
+.acf-field.acf-no-margin {
+	margin: 0 !important;
 }
 /* End: ACF custom classes */
 
