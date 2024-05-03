@@ -78,7 +78,10 @@ body:not(.front-end) .has-visibility::before {
 	content: 'Visibility';
 	position: absolute;
 	top: calc( 100% + 2px );
+	left: -4px;
 	right: -4px;
+	width: auto;
+	height: 1.5em;
 	z-index: 100;
 	white-space: nowrap;
 	background: rgba(128,128,128,0.5);
