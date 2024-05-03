@@ -127,6 +127,9 @@ add_filter( 'rs/post_field', 'my_theme_post_field_date_formatting', 10, 4 );
 
 ## Changelog
 
+### 1.2.8
+* Fixed visibility appearance on block editor
+
 ### 1.2.7
 * Added better description to each included ACF field
 * Updated readme with more example filters and better descriptions
