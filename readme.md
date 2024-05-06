@@ -39,6 +39,10 @@ Here is the edit profile form, as it appears on the front-end:
 
 ![Screenshot of the "Edit Profile" form fields as they appear on the front-end](screenshot-edit-profile-form.png)
 
+- **Link Block** - Allows you to create a link with custom text and URL, containing any blocks of your choice.
+
+![Screenshot of the "Link Block" block showing available options](screenshot-link-block.png)
+
 ## Plugin Updates
 
 This plugin is hosted on GitHub. To enable automatic plugin updates you can use the plugin [Git Updater](https://github.com/afragen/git-updater).
@@ -126,6 +130,10 @@ add_filter( 'rs/post_field', 'my_theme_post_field_date_formatting', 10, 4 );
 ```
 
 ## Changelog
+
+### 1.2.9
+* Fixed toolbar covered by visibility tooltip on backend
+* Added Link Block
 
 ### 1.2.8
 * Fixed visibility appearance on block editor
