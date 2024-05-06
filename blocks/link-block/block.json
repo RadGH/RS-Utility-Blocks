@@ -1,0 +1,50 @@
+{
+  "name": "rs-utility-blocks/link-block",
+  "title": "Link Block",
+  "description": "Surround any other blocks with a link. Use with caution, links should not contain forms or other interactive elements.",
+  "style": [],
+  "category": "common",
+  "icon": "admin-links",
+  "keywords": [ "link", "button", "cta" ],
+  "supports": {
+    "align": true,
+    "anchor": true,
+    "color": {
+      "text": true,
+      "background": true,
+      "gradients": true,
+      "link": true
+    },
+    "customClassName": true,
+    "layout": {
+      "allowSwitching": false,
+      "allowInheriting": false,
+      "allowEditing": false,
+      "default": {
+        "type": "flex"
+      }
+    },
+    "spacing": {
+      "margin": true,
+      "padding": true
+    },
+    "typography": {
+      "fontSize": true,
+      "lineHeight": true,
+      "FontFamily": true,
+      "FontWeight": true,
+      "FontStyle": true,
+      "TextTransform": true,
+      "LetterSpacing": true,
+      "__experimentalFontFamily": true,
+      "__experimentalFontWeight": true,
+      "__experimentalFontStyle": true,
+      "__experimentalTextTransform": true,
+      "__experimentalLetterSpacing": true
+    }
+  },
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "link-block.php"
+  }
+}

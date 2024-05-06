@@ -113,6 +113,90 @@
 		"show_in_rest": 0
 	},
 	{
+		"key": "group_66394f3e0d9ca",
+		"title": "Link Block",
+		"fields": [
+			{
+				"key": "field_66394f422742a",
+				"label": "URL",
+				"name": "url",
+				"aria-label": "",
+				"type": "text",
+				"instructions": "",
+				"required": 0,
+				"conditional_logic": 0,
+				"wrapper": {
+					"width": "",
+					"class": "",
+					"id": ""
+				},
+				"default_value": "",
+				"maxlength": "",
+				"placeholder": "",
+				"prepend": "",
+				"append": ""
+			},
+			{
+				"key": "field_66394f5e2742b",
+				"label": "New Tab",
+				"name": "new_tab",
+				"aria-label": "",
+				"type": "true_false",
+				"instructions": "",
+				"required": 0,
+				"conditional_logic": 0,
+				"wrapper": {
+					"width": "",
+					"class": "acf-hide-label",
+					"id": ""
+				},
+				"message": "Open in new tab",
+				"default_value": 0,
+				"ui": 0,
+				"ui_on_text": "",
+				"ui_off_text": ""
+			},
+			{
+				"key": "field_66394f6b2742c",
+				"label": "Title (Hover Tooltip)",
+				"name": "title",
+				"aria-label": "",
+				"type": "text",
+				"instructions": "",
+				"required": 0,
+				"conditional_logic": 0,
+				"wrapper": {
+					"width": "",
+					"class": "",
+					"id": ""
+				},
+				"default_value": "",
+				"maxlength": "",
+				"placeholder": "",
+				"prepend": "",
+				"append": ""
+			}
+		],
+		"location": [
+			[
+				{
+					"param": "block",
+					"operator": "==",
+					"value": "rs-utility-blocks\/link-block"
+				}
+			]
+		],
+		"menu_order": 0,
+		"position": "acf_after_title",
+		"style": "default",
+		"label_placement": "top",
+		"instruction_placement": "label",
+		"hide_on_screen": "",
+		"active": true,
+		"description": "[RS Utility Blocks] ACF Block -> Link Block",
+		"show_in_rest": 0
+	},
+	{
 		"key": "group_65f2e54f471c2",
 		"title": "Login Form",
 		"fields": [
@@ -464,7 +548,7 @@
 					"class": "acf-hide-label",
 					"id": ""
 				},
-				"message": "<p>Developers can change the value of this block using a filter, for example:<\/p>\r\n\r\n<pre class=\"code\" style=\"overflow: auto; padding: 5px; background: #00000010;\">add_filter( 'rs\/post_field\/custom_field', function( $value, $post, $display_field, $custom_field_key ) {\r\n    \/\/ Example values:\r\n    \/\/ $value = null\r\n    \/\/ $post = WP_Post object\r\n    \/\/ $display_field = \"custom_field\"\r\n    \/\/ $custom_field_key = \"birthday\"\r\n\r\n    \/\/ [Example] Apply date formatting to a date field\r\n    if ( $display_field == 'custom_field' && $field_key == 'expiration_date' ) {\r\n        $value = get_post_meta( $post->ID, 'expiration_date', true );\r\n        if ( $value ) $value = date( 'F j, Y', strtotime($value) );\r\n    }\r\n\r\n    return $value;\r\n}, 10, 4);<\/pre>",
+				"message": "<p>Developers can change the value of this block using a filter, for example:<\/p>\r\n\r\n<pre class=\"code\" style=\"overflow: auto; padding: 5px; background: #00000010;\">add_filter( 'rs\/post_field', function( $value, $post_id, $display_field, $custom_field_key ) {\r\n    \/\/ Example values:\r\n    \/\/ $value = null\r\n    \/\/ $post_id = Post ID\r\n    \/\/ $display_field = \"custom_field\"\r\n    \/\/ $custom_field_key = \"birthday\"\r\n\r\n    \/\/ [Example] Apply date formatting to a date field\r\n    if ( $display_field == 'custom_field' && $field_key == 'expiration_date' ) {\r\n        $value = get_post_meta( $post->ID, 'expiration_date', true );\r\n        if ( $value ) $value = date( 'F j, Y', strtotime($value) );\r\n    }\r\n\r\n    return $value;\r\n}, 10, 4);<\/pre>",
 				"new_lines": "wpautop",
 				"esc_html": 0
 			}

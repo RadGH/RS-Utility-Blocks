@@ -120,6 +120,91 @@ add_action( 'acf/include_fields', function() {
 	) );
 	
 	acf_add_local_field_group( array(
+		'key' => 'group_66394f3e0d9ca',
+		'title' => 'Link Block',
+		'fields' => array(
+			array(
+				'key' => 'field_66394f422742a',
+				'label' => 'URL',
+				'name' => 'url',
+				'aria-label' => '',
+				'type' => 'text',
+				'instructions' => '',
+				'required' => 0,
+				'conditional_logic' => 0,
+				'wrapper' => array(
+					'width' => '',
+					'class' => '',
+					'id' => '',
+				),
+				'default_value' => '',
+				'maxlength' => '',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+			),
+			array(
+				'key' => 'field_66394f5e2742b',
+				'label' => 'New Tab',
+				'name' => 'new_tab',
+				'aria-label' => '',
+				'type' => 'true_false',
+				'instructions' => '',
+				'required' => 0,
+				'conditional_logic' => 0,
+				'wrapper' => array(
+					'width' => '',
+					'class' => 'acf-hide-label',
+					'id' => '',
+				),
+				'message' => 'Open in new tab',
+				'default_value' => 0,
+				'ui' => 0,
+				'ui_on_text' => '',
+				'ui_off_text' => '',
+			),
+			array(
+				'key' => 'field_66394f6b2742c',
+				'label' => 'Title (Hover Tooltip)',
+				'name' => 'title',
+				'aria-label' => '',
+				'type' => 'text',
+				'instructions' => '',
+				'required' => 0,
+				'conditional_logic' => 0,
+				'wrapper' => array(
+					'width' => '',
+					'class' => '',
+					'id' => '',
+				),
+				'default_value' => '',
+				'maxlength' => '',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+			),
+		),
+		'location' => array(
+			array(
+				array(
+					'param' => 'block',
+					'operator' => '==',
+					'value' => 'rs-utility-blocks/link-block',
+				),
+			),
+		),
+		'menu_order' => 0,
+		'position' => 'acf_after_title',
+		'style' => 'default',
+		'label_placement' => 'top',
+		'instruction_placement' => 'label',
+		'hide_on_screen' => '',
+		'active' => true,
+		'description' => '[RS Utility Blocks] ACF Block -> Link Block',
+		'show_in_rest' => 0,
+	) );
+	
+	acf_add_local_field_group( array(
 		'key' => 'group_65f2e54f471c2',
 		'title' => 'Login Form',
 		'fields' => array(
@@ -475,7 +560,7 @@ add_action( 'acf/include_fields', function() {
 				),
 				'message' => '<p>Developers can change the value of this block using a filter, for example:</p>
 
-<pre class="code" style="overflow: auto; padding: 5px; background: #00000010;">add_filter( \'rs/post_field\', function( $value, $post, $display_field, $custom_field_key ) {
+<pre class="code" style="overflow: auto; padding: 5px; background: #00000010;">add_filter( \'rs/post_field\', function( $value, $post_id, $display_field, $custom_field_key ) {
 		// Example values:
 		// $value = null
 		// $post_id = Post ID
