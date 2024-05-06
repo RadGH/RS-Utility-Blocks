@@ -45,6 +45,8 @@ if ( $is_preview ) {
 	
 	// On the front end, show as a link and add extra attributes
 	$html_element = 'a';
+	if ( ! $url ) $html_element = 'div';
+	
 	$atts['href'] = $url;
 	if ( $new_tab ) $atts['target'] = '_blank';
 	if ( $title ) $atts['title'] = $title;
