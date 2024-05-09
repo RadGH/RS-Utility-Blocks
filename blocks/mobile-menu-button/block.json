@@ -1,0 +1,51 @@
+{
+  "name": "rs-utility-blocks/mobile-menu-button",
+  "title": "Mobile Menu Button",
+  "description": "Create a mobile menu that can be opened by a button.",
+  "style": ["file:./mobile-menu-button.css"],
+  "script": ["file:./mobile-menu-button.js"],
+  "category": "design",
+  "icon": "smartphone",
+  "keywords": [ "menu", "mobile", "navigation", "hamburger" ],
+  "supports": {
+    "align": true,
+    "anchor": true,
+    "color": {
+      "text": true,
+      "background": true,
+      "gradients": true,
+      "link": true
+    },
+    "customClassName": true,
+    "layout": {
+      "allowSwitching": false,
+      "allowInheriting": false,
+      "allowEditing": false,
+      "default": {
+        "type": "flex"
+      }
+    },
+    "spacing": {
+      "margin": true,
+      "padding": true
+    },
+    "typography": {
+      "fontSize": true,
+      "lineHeight": true,
+      "FontFamily": true,
+      "FontWeight": true,
+      "FontStyle": true,
+      "TextTransform": true,
+      "LetterSpacing": true,
+      "__experimentalFontFamily": true,
+      "__experimentalFontWeight": true,
+      "__experimentalFontStyle": true,
+      "__experimentalTextTransform": true,
+      "__experimentalLetterSpacing": true
+    }
+  },
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "mobile-menu-button.php"
+  }
+}

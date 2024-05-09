@@ -1,0 +1,10 @@
+/* Apply overrides on the block editor */
+.editor-styles-wrapper .rs-mobile-menu--container {
+	display: block !important;
+	position: static !important;
+}
+
+/* Toggle visibility if closed */
+.rs-mobile-menu--container:not(.open) {
+	display: none;
+}

@@ -1,0 +1,47 @@
+{
+  "name": "rs-utility-blocks/mobile-menu-container",
+  "title": "Mobile Menu Container",
+  "description": "Contains any other blocks to build a mobile menu. Use a separate Mobile Menu Button block to open the menu.",
+  "style": ["file:./mobile-menu-container.css"],
+  "category": "common",
+  "icon": "menu",
+  "keywords": [ "mobile", "menu", "container" ],
+  "supports": {
+    "align": false,
+    "anchor": true,
+    "background": {
+      "backgroundImage": true,
+      "backgroundSize": true
+    },
+    "color": {
+      "text": true,
+      "background": true,
+      "gradients": true,
+      "link": true
+    },
+    "customClassName": true,
+    "layout": false,
+    "spacing": {
+      "margin": true,
+      "padding": true
+    },
+    "typography": {
+      "fontSize": true,
+      "lineHeight": true,
+      "FontFamily": true,
+      "FontWeight": true,
+      "FontStyle": true,
+      "TextTransform": true,
+      "LetterSpacing": true,
+      "__experimentalFontFamily": true,
+      "__experimentalFontWeight": true,
+      "__experimentalFontStyle": true,
+      "__experimentalTextTransform": true,
+      "__experimentalLetterSpacing": true
+    }
+  },
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "mobile-menu-container.php"
+  }
+}

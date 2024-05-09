@@ -1,0 +1,39 @@
+/* Make the menu button container relative */
+.wp-block-rs-utility-blocks-mobile-menu-button {
+	position: relative;
+}
+
+/* Reset button styles */
+html button.rs-mobile-menu-button {
+	-webkit-appearance: none;
+	border: none;
+	background: none;
+	box-shadow: none;
+	cursor: pointer;
+	color: inherit;
+}
+
+html button.rs-mobile-menu-button:not(:active) {
+	outline: none;
+}
+
+/* Custom styles */
+button.rs-mobile-menu-button {
+	position: relative;
+	z-index: 210;
+}
+
+/* Toggle visibility of text and icon if menu is open or closed */
+.rs-mobile-menu-button.open .rs--state-open {
+	display: none;
+}
+
+.rs-mobile-menu-button:not(.open) .rs--state-close {
+	display: none;
+}
+
+/* Button structure */
+.rs-mobile-menu-button .rs--state {
+	display: flex;
+	flex-direction: column;
+}

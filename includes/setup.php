@@ -121,6 +121,10 @@ class RS_Utility_Blocks_Setup {
 		
 		register_block_type( RS_Utility_Blocks_PATH . '/blocks/link-block/block.json');
 		
+		register_block_type( RS_Utility_Blocks_PATH . '/blocks/mobile-menu-button/block.json');
+		
+		register_block_type( RS_Utility_Blocks_PATH . '/blocks/mobile-menu-container/block.json');
+		
 	}
 	
 	/**
