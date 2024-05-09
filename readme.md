@@ -43,6 +43,14 @@ Here is the edit profile form, as it appears on the front-end:
 
 ![Screenshot of the "Link Block" block showing available options](screenshot-link-block.png)
 
+- **Mobile Menu Button** - Displays a button that toggles the visibility of a container block when clicked.
+
+![Screenshot of the "Mobile Menu Button" block showing available options](screenshot-mobile-menu-button.png)
+
+- **Mobile Menu Container** - Displays a container block that is hidden by default and shown when the mobile menu button is clicked.
+
+![Screenshot of the "Mobile Menu Container" block showing available options](screenshot-mobile-menu-container.png)
+
 ## Plugin Updates
 
 This plugin is hosted on GitHub. To enable automatic plugin updates you can use the plugin [Git Updater](https://github.com/afragen/git-updater).
@@ -130,6 +138,9 @@ add_filter( 'rs/post_field', 'my_theme_post_field_date_formatting', 10, 4 );
 ```
 
 ## Changelog
+
+### 1.3.0
+* Added mobile menu button and mobile menu container blocks
 
 ### 1.2.9
 * Fixed toolbar covered by visibility tooltip on backend
