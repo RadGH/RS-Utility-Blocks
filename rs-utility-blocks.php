@@ -34,7 +34,7 @@ class RS_Utility_Blocks {
 		}
 		
 		// 2. Load ACF fields
-		require_once( RS_Utility_Blocks_PATH . '/assets/acf-fields.php' );
+		// require_once( RS_Utility_Blocks_PATH . '/assets/acf-fields.php' );
 		
 		// 3. Load plugin files
 		require_once( RS_Utility_Blocks_PATH . '/includes/setup.php' );

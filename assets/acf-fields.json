@@ -1,9 +1,17 @@
 [
 	{
+		"qef_simple_location_rules": false,
 		"key": "group_6619885838faf",
 		"title": "Edit Profile",
 		"fields": [
 			{
+				"allow_backendsearch": false,
+				"show_column_filter": false,
+				"allow_bulkedit": false,
+				"allow_quickedit": false,
+				"show_column": false,
+				"show_column_weight": 1000,
+				"show_column_sortable": false,
 				"key": "field_66198857c8070",
 				"label": "Fields",
 				"name": "fields",
@@ -37,6 +45,13 @@
 				"placeholder": ""
 			},
 			{
+				"allow_backendsearch": false,
+				"show_column_filter": false,
+				"allow_bulkedit": false,
+				"allow_quickedit": false,
+				"show_column": false,
+				"show_column_weight": 1000,
+				"show_column_sortable": false,
 				"key": "field_66199f4675802",
 				"label": "Show Confirm Email",
 				"name": "show_confirm_email",
@@ -65,6 +80,13 @@
 				"ui_off_text": ""
 			},
 			{
+				"allow_backendsearch": false,
+				"show_column_filter": false,
+				"allow_bulkedit": false,
+				"allow_quickedit": false,
+				"show_column": false,
+				"show_column_weight": 1000,
+				"show_column_sortable": false,
 				"key": "field_6619a0a6c5e45",
 				"label": "Show Confirm Password",
 				"name": "show_confirm_password",
@@ -113,10 +135,18 @@
 		"show_in_rest": 0
 	},
 	{
+		"qef_simple_location_rules": false,
 		"key": "group_66394f3e0d9ca",
 		"title": "Link Block",
 		"fields": [
 			{
+				"allow_backendsearch": false,
+				"show_column_filter": false,
+				"allow_bulkedit": false,
+				"allow_quickedit": false,
+				"show_column": false,
+				"show_column_weight": 1000,
+				"show_column_sortable": false,
 				"key": "field_66394f422742a",
 				"label": "URL",
 				"name": "url",
@@ -137,6 +167,13 @@
 				"append": ""
 			},
 			{
+				"allow_backendsearch": false,
+				"show_column_filter": false,
+				"allow_bulkedit": false,
+				"allow_quickedit": false,
+				"show_column": false,
+				"show_column_weight": 1000,
+				"show_column_sortable": false,
 				"key": "field_66394f5e2742b",
 				"label": "New Tab",
 				"name": "new_tab",
@@ -157,6 +194,13 @@
 				"ui_off_text": ""
 			},
 			{
+				"allow_backendsearch": false,
+				"show_column_filter": false,
+				"allow_bulkedit": false,
+				"allow_quickedit": false,
+				"show_column": false,
+				"show_column_weight": 1000,
+				"show_column_sortable": false,
 				"key": "field_66394f6b2742c",
 				"label": "Title (Hover Tooltip)",
 				"name": "title",
@@ -197,10 +241,18 @@
 		"show_in_rest": 0
 	},
 	{
+		"qef_simple_location_rules": false,
 		"key": "group_65f2e54f471c2",
 		"title": "Login Form",
 		"fields": [
 			{
+				"allow_backendsearch": false,
+				"show_column_filter": false,
+				"allow_bulkedit": false,
+				"allow_quickedit": false,
+				"show_column": false,
+				"show_column_weight": 1000,
+				"show_column_sortable": false,
 				"key": "field_65f2e54f00886",
 				"label": "Settings",
 				"name": "settings",
@@ -229,6 +281,13 @@
 				"custom_choice_button_text": "Add new choice"
 			},
 			{
+				"allow_backendsearch": false,
+				"show_column_filter": false,
+				"allow_bulkedit": false,
+				"allow_quickedit": false,
+				"show_column": false,
+				"show_column_weight": 1000,
+				"show_column_sortable": false,
 				"key": "field_65f2e57f00887",
 				"label": "Create Account URL",
 				"name": "create_account_url",
@@ -257,6 +316,13 @@
 				"append": ""
 			},
 			{
+				"allow_backendsearch": false,
+				"show_column_filter": false,
+				"allow_bulkedit": false,
+				"allow_quickedit": false,
+				"show_column": false,
+				"show_column_weight": 1000,
+				"show_column_sortable": false,
 				"key": "field_65f2ef6272a08",
 				"label": "Login Redirect",
 				"name": "login_redirect",
@@ -297,10 +363,18 @@
 		"show_in_rest": 0
 	},
 	{
+		"qef_simple_location_rules": false,
 		"key": "group_663aa1c0cafe3",
 		"title": "Mobile Menu Button",
 		"fields": [
 			{
+				"allow_backendsearch": false,
+				"show_column_filter": false,
+				"allow_bulkedit": false,
+				"allow_quickedit": false,
+				"show_column": false,
+				"show_column_weight": 1000,
+				"show_column_sortable": false,
 				"key": "field_663aa1c68ed43",
 				"label": "Menu Slug",
 				"name": "menu_slug",
@@ -321,6 +395,13 @@
 				"append": ""
 			},
 			{
+				"allow_backendsearch": false,
+				"show_column_filter": false,
+				"allow_bulkedit": false,
+				"allow_quickedit": false,
+				"show_column": false,
+				"show_column_weight": 1000,
+				"show_column_sortable": false,
 				"key": "field_663aa202dbda2",
 				"label": "Appearance",
 				"name": "appearance",
@@ -348,6 +429,13 @@
 				"placeholder": ""
 			},
 			{
+				"allow_backendsearch": false,
+				"show_column_filter": false,
+				"allow_bulkedit": false,
+				"allow_quickedit": false,
+				"show_column": false,
+				"show_column_weight": 1000,
+				"show_column_sortable": false,
 				"key": "field_663aa227dbda3",
 				"label": "Open Text",
 				"name": "open_text",
@@ -383,6 +471,13 @@
 				"append": ""
 			},
 			{
+				"allow_backendsearch": false,
+				"show_column_filter": false,
+				"allow_bulkedit": false,
+				"allow_quickedit": false,
+				"show_column": false,
+				"show_column_weight": 1000,
+				"show_column_sortable": false,
 				"key": "field_663aa23fdbda5",
 				"label": "Close Text",
 				"name": "close_text",
@@ -418,6 +513,13 @@
 				"append": ""
 			},
 			{
+				"allow_backendsearch": false,
+				"show_column_filter": false,
+				"allow_bulkedit": false,
+				"allow_quickedit": false,
+				"show_column": false,
+				"show_column_weight": 1000,
+				"show_column_sortable": false,
 				"key": "field_663aa288dbda8",
 				"label": "Open Icon Type",
 				"name": "open_icon_type",
@@ -460,6 +562,13 @@
 				"layout": "horizontal"
 			},
 			{
+				"allow_backendsearch": false,
+				"show_column_filter": false,
+				"allow_bulkedit": false,
+				"allow_quickedit": false,
+				"show_column": false,
+				"show_column_weight": 1000,
+				"show_column_sortable": false,
 				"key": "field_663aa24bdbda6",
 				"label": "Custom Open Icon",
 				"name": "custom_open_icon",
@@ -510,6 +619,13 @@
 				"preview_size": "medium"
 			},
 			{
+				"allow_backendsearch": false,
+				"show_column_filter": false,
+				"allow_bulkedit": false,
+				"allow_quickedit": false,
+				"show_column": false,
+				"show_column_weight": 1000,
+				"show_column_sortable": false,
 				"key": "field_663aa3134ba21",
 				"label": "Close Icon Type",
 				"name": "close_icon_type",
@@ -550,6 +666,13 @@
 				"layout": "horizontal"
 			},
 			{
+				"allow_backendsearch": false,
+				"show_column_filter": false,
+				"allow_bulkedit": false,
+				"allow_quickedit": false,
+				"show_column": false,
+				"show_column_weight": 1000,
+				"show_column_sortable": false,
 				"key": "field_663aa3524ba22",
 				"label": "Custom Close Icon",
 				"name": "custom_close_icon",
@@ -600,6 +723,13 @@
 				"preview_size": "medium"
 			},
 			{
+				"allow_backendsearch": false,
+				"show_column_filter": false,
+				"allow_bulkedit": false,
+				"allow_quickedit": false,
+				"show_column": false,
+				"show_column_weight": 1000,
+				"show_column_sortable": false,
 				"key": "field_663aa575edfc0",
 				"label": "Icon Text Placement",
 				"name": "icon_text_placement",
@@ -653,10 +783,18 @@
 		"show_in_rest": 0
 	},
 	{
+		"qef_simple_location_rules": false,
 		"key": "group_663ab48c54d97",
 		"title": "Mobile Menu Container",
 		"fields": [
 			{
+				"allow_backendsearch": false,
+				"show_column_filter": false,
+				"allow_bulkedit": false,
+				"allow_quickedit": false,
+				"show_column": false,
+				"show_column_weight": 1000,
+				"show_column_sortable": false,
 				"key": "field_663ab491e94d3",
 				"label": "Menu Slug",
 				"name": "menu_slug",
@@ -697,10 +835,91 @@
 		"show_in_rest": 0
 	},
 	{
+		"qef_simple_location_rules": 0,
 		"key": "group_65f2327831337",
 		"title": "Post Field",
 		"fields": [
 			{
+				"allow_backendsearch": false,
+				"show_column_filter": 0,
+				"allow_bulkedit": 0,
+				"allow_quickedit": 0,
+				"show_column": 0,
+				"show_column_weight": 1000,
+				"show_column_sortable": false,
+				"key": "field_663e504fa21d5",
+				"label": "Selection",
+				"name": "selection",
+				"aria-label": "",
+				"type": "select",
+				"instructions": "",
+				"required": 0,
+				"conditional_logic": 0,
+				"wrapper": {
+					"width": "",
+					"class": "",
+					"id": ""
+				},
+				"choices": {
+					"post": "Current post",
+					"post_parent": "Parent post",
+					"specific_post": "Specific post"
+				},
+				"default_value": "post",
+				"return_format": "value",
+				"multiple": 0,
+				"allow_null": 0,
+				"ui": 0,
+				"ajax": 0,
+				"placeholder": ""
+			},
+			{
+				"allow_backendsearch": false,
+				"show_column_filter": false,
+				"allow_bulkedit": 0,
+				"allow_quickedit": 0,
+				"show_column": 0,
+				"show_column_weight": 1000,
+				"show_column_sortable": false,
+				"key": "field_663e5118a21d6",
+				"label": "Specific Post",
+				"name": "specific_post",
+				"aria-label": "",
+				"type": "post_object",
+				"instructions": "",
+				"required": 0,
+				"conditional_logic": [
+					[
+						{
+							"field": "field_663e504fa21d5",
+							"operator": "==",
+							"value": "specific_post"
+						}
+					]
+				],
+				"wrapper": {
+					"width": "",
+					"class": "",
+					"id": ""
+				},
+				"post_type": "",
+				"post_status": "",
+				"taxonomy": "",
+				"return_format": "id",
+				"multiple": 0,
+				"allow_null": 0,
+				"bidirectional": 0,
+				"ui": 1,
+				"bidirectional_target": []
+			},
+			{
+				"allow_backendsearch": false,
+				"show_column_filter": 0,
+				"allow_bulkedit": 0,
+				"allow_quickedit": 0,
+				"show_column": 0,
+				"show_column_weight": 1000,
+				"show_column_sortable": false,
 				"key": "field_65f23278347e0",
 				"label": "Post Field",
 				"name": "post_display_field",
@@ -719,17 +938,19 @@
 					"post_author": "Author",
 					"post_date": "Publish Date",
 					"post_date_gmt": "Publish Date (GMT)",
+					"post_modified": "Modified Date",
+					"post_modified_gmt": "Modified Date (GMT)",
 					"post_content": "Content",
 					"post_title": "Title",
 					"post_excerpt": "Excerpt",
 					"post_status": "Post Status",
 					"comment_status": "Comment Status",
-					"post_name": "Name",
-					"post_modified": "Modified",
-					"post_modified_gmt": "Modified (GMT)",
+					"post_name": "Post Name (Slug)",
+					"permalink": "Permalink",
 					"guid": "GUID",
 					"post_type": "Post Type",
 					"comment_count": "Comment Count",
+					"featured_image": "Featured Image",
 					"custom_field": "Custom Field"
 				},
 				"default_value": false,
@@ -741,6 +962,171 @@
 				"placeholder": ""
 			},
 			{
+				"allow_backendsearch": false,
+				"show_column_filter": 0,
+				"allow_bulkedit": 0,
+				"allow_quickedit": 0,
+				"show_column": 0,
+				"show_column_weight": 1000,
+				"show_column_sortable": false,
+				"key": "field_663e5b96ab779",
+				"label": "Image Size",
+				"name": "image_size",
+				"aria-label": "",
+				"type": "select",
+				"instructions": "",
+				"required": 0,
+				"conditional_logic": [
+					[
+						{
+							"field": "field_65f23278347e0",
+							"operator": "==",
+							"value": "featured_image"
+						}
+					]
+				],
+				"wrapper": {
+					"width": "",
+					"class": "",
+					"id": ""
+				},
+				"choices": {
+					"thumbnail": "Thumbnail (150x150, cropped)",
+					"medium": "Medium (300x300)",
+					"medium_large": "Medium Large (768x0)",
+					"large": "Large (1024x1024)",
+					"1536x1536": "1536x1536 (1536x1536)",
+					"2048x2048": "2048x2048 (2048x2048)"
+				},
+				"default_value": false,
+				"return_format": "value",
+				"multiple": 0,
+				"allow_null": 1,
+				"ui": 0,
+				"ajax": 0,
+				"placeholder": ""
+			},
+			{
+				"allow_backendsearch": false,
+				"show_column_filter": 0,
+				"allow_bulkedit": 0,
+				"allow_quickedit": 0,
+				"show_column": 0,
+				"show_column_weight": 1000,
+				"show_column_sortable": false,
+				"key": "field_663e5c09260ad",
+				"label": "Date Format",
+				"name": "date_format",
+				"aria-label": "",
+				"type": "select",
+				"instructions": "",
+				"required": 0,
+				"conditional_logic": [
+					[
+						{
+							"field": "field_65f23278347e0",
+							"operator": "==",
+							"value": "post_date"
+						}
+					],
+					[
+						{
+							"field": "field_65f23278347e0",
+							"operator": "==",
+							"value": "post_date_gmt"
+						}
+					],
+					[
+						{
+							"field": "field_65f23278347e0",
+							"operator": "==",
+							"value": "post_modified"
+						}
+					],
+					[
+						{
+							"field": "field_65f23278347e0",
+							"operator": "==",
+							"value": "post_modified_gmt"
+						}
+					],
+					[
+						{
+							"field": "field_65f23278347e0",
+							"operator": "==",
+							"value": "custom_field"
+						}
+					]
+				],
+				"wrapper": {
+					"width": "",
+					"class": "",
+					"id": ""
+				},
+				"choices": {
+					"F j, Y": "May 10, 2024 (Site Default)",
+					"F j, Y g:i a": "May 10, 2024 11:39 am (Site Default)",
+					"F j": "May 10",
+					"Y-m-d": "2024-05-10",
+					"Y-m-d H:i:s": "2024-05-10 11:39:22",
+					"m\/d\/Y": "05\/10\/2024",
+					"m\/d\/Y g:i a": "05\/10\/2024 11:39 am",
+					"d\/m\/Y": "10\/05\/2024",
+					"d\/m\/Y g:i a": "10\/05\/2024 11:39 am",
+					"relative": "Relative",
+					"custom": "Custom"
+				},
+				"default_value": false,
+				"return_format": "value",
+				"multiple": 0,
+				"allow_null": 1,
+				"ui": 0,
+				"ajax": 0,
+				"placeholder": ""
+			},
+			{
+				"allow_backendsearch": 0,
+				"show_column_filter": false,
+				"allow_bulkedit": 0,
+				"allow_quickedit": 0,
+				"show_column": 0,
+				"show_column_weight": 1000,
+				"show_column_sortable": false,
+				"key": "field_663e665bdc957",
+				"label": "Date Format (Custom)",
+				"name": "date_format_custom",
+				"aria-label": "",
+				"type": "text",
+				"instructions": "",
+				"required": 0,
+				"conditional_logic": [
+					[
+						{
+							"field": "field_663e5c09260ad",
+							"operator": "==",
+							"value": "custom"
+						}
+					]
+				],
+				"wrapper": {
+					"width": "",
+					"class": "",
+					"id": ""
+				},
+				"default_value": "F j, Y",
+				"maxlength": "",
+				"placeholder": "",
+				"prepend": "",
+				"append": ""
+			},
+			{
+				"allow_backendsearch": false,
+				"show_column_filter": false,
+				"allow_bulkedit": false,
+				"allow_quickedit": false,
+				"show_column": false,
+				"show_column_weight": 1000,
+				"show_column_sortable": false,
 				"key": "field_65f23278383c1",
 				"label": "Custom Field Key",
 				"name": "custom_field_key",
@@ -769,6 +1155,40 @@
 				"append": ""
 			},
 			{
+				"allow_backendsearch": 0,
+				"show_column_filter": false,
+				"allow_bulkedit": 0,
+				"allow_quickedit": 0,
+				"show_column": 0,
+				"show_column_weight": 1000,
+				"show_column_sortable": false,
+				"key": "field_663e515ea21d7",
+				"label": "Default Value",
+				"name": "default_value",
+				"aria-label": "",
+				"type": "text",
+				"instructions": "",
+				"required": 0,
+				"conditional_logic": 0,
+				"wrapper": {
+					"width": "",
+					"class": "",
+					"id": ""
+				},
+				"default_value": "",
+				"maxlength": "",
+				"placeholder": "",
+				"prepend": "",
+				"append": ""
+			},
+			{
+				"allow_backendsearch": false,
+				"show_column_filter": false,
+				"allow_bulkedit": false,
+				"allow_quickedit": false,
+				"show_column": false,
+				"show_column_weight": 1000,
+				"show_column_sortable": false,
 				"key": "field_65f232783bd00",
 				"label": "Create Link",
 				"name": "create_link",
@@ -789,6 +1209,13 @@
 				"ui_off_text": ""
 			},
 			{
+				"allow_backendsearch": false,
+				"show_column_filter": 0,
+				"allow_bulkedit": 0,
+				"allow_quickedit": 0,
+				"show_column": 0,
+				"show_column_weight": 1000,
+				"show_column_sortable": false,
 				"key": "field_65f2327843203",
 				"label": "Link Type",
 				"name": "link_type",
@@ -813,7 +1240,8 @@
 				"choices": {
 					"post": "Permalink",
 					"archive": "Post Type Archive",
-					"parent": "Parent",
+					"parent": "Parent Post",
+					"author": "Post Author",
 					"edit": "Edit Post URL",
 					"custom": "Custom URL"
 				},
@@ -826,6 +1254,13 @@
 				"placeholder": ""
 			},
 			{
+				"allow_backendsearch": false,
+				"show_column_filter": false,
+				"allow_bulkedit": false,
+				"allow_quickedit": false,
+				"show_column": false,
+				"show_column_weight": 1000,
+				"show_column_sortable": false,
 				"key": "field_65f2327846ea4",
 				"label": "Custom URL",
 				"name": "custom_url",
@@ -859,6 +1294,13 @@
 				"append": ""
 			},
 			{
+				"allow_backendsearch": false,
+				"show_column_filter": false,
+				"allow_bulkedit": false,
+				"allow_quickedit": false,
+				"show_column": false,
+				"show_column_weight": 1000,
+				"show_column_sortable": false,
 				"key": "field_65f232783f7ae",
 				"label": "New Tab",
 				"name": "new_tab",
@@ -887,6 +1329,13 @@
 				"ui_off_text": ""
 			},
 			{
+				"allow_backendsearch": false,
+				"show_column_filter": 0,
+				"allow_bulkedit": 0,
+				"allow_quickedit": 0,
+				"show_column": 0,
+				"show_column_weight": 1000,
+				"show_column_sortable": false,
 				"key": "field_65f232784a86e",
 				"label": "Apply Formatting",
 				"name": "apply_formatting",
@@ -907,6 +1356,13 @@
 				"ui_off_text": ""
 			},
 			{
+				"allow_backendsearch": false,
+				"show_column_filter": false,
+				"allow_bulkedit": false,
+				"allow_quickedit": false,
+				"show_column": false,
+				"show_column_weight": 1000,
+				"show_column_sortable": false,
 				"key": "field_65f232784e3d4",
 				"label": "Show filter (for developers)",
 				"name": "show_filter_instructions_for_developers",
@@ -927,6 +1383,13 @@
 				"ui_off_text": ""
 			},
 			{
+				"allow_backendsearch": false,
+				"show_column_filter": false,
+				"allow_bulkedit": false,
+				"allow_quickedit": false,
+				"show_column": false,
+				"show_column_weight": 1000,
+				"show_column_sortable": false,
 				"key": "field_65f2327852088",
 				"label": "Filter Usage",
 				"name": "",
@@ -948,7 +1411,7 @@
 					"class": "acf-hide-label",
 					"id": ""
 				},
-				"message": "<p>Developers can change the value of this block using a filter, for example:<\/p>\r\n\r\n<pre class=\"code\" style=\"overflow: auto; padding: 5px; background: #00000010;\">add_filter( 'rs\/post_field', function( $value, $post_id, $display_field, $custom_field_key ) {\r\n    \/\/ Example values:\r\n    \/\/ $value = null\r\n    \/\/ $post_id = Post ID\r\n    \/\/ $display_field = \"custom_field\"\r\n    \/\/ $custom_field_key = \"birthday\"\r\n\r\n    \/\/ [Example] Apply date formatting to a date field\r\n    if ( $display_field == 'custom_field' && $field_key == 'expiration_date' ) {\r\n        $value = get_post_meta( $post->ID, 'expiration_date', true );\r\n        if ( $value ) $value = date( 'F j, Y', strtotime($value) );\r\n    }\r\n\r\n    return $value;\r\n}, 10, 4);<\/pre>",
+				"message": "<p>Developers can change the value of this block using a filter, for example:<\/p>\r\n\r\n<pre class=\"code\" style=\"overflow: auto; padding: 5px; background: #00000010;\">add_filter( 'rs\/post_field', function( $value, $post_id, $display_field, $custom_field_key, $block ) {\r\n    \/\/ Example values:\r\n    \/\/ $value = null\r\n    \/\/ $post_id = Post ID\r\n    \/\/ $display_field = \"custom_field\"\r\n    \/\/ $custom_field_key = \"birthday\"\r\n    \/\/ $block = array\r\n\r\n    \/\/ [Example] Apply date formatting to a custom date field\r\n    if ( $display_field == 'custom_field' && $field_key == 'expiration_date' ) {\r\n        $value = get_post_meta( $post_id, 'expiration_date', true );\r\n        if ( $value ) $value = date( 'F j, Y', strtotime($value) );\r\n    }\r\n\r\n    return $value;\r\n}, 10, 4);<\/pre>",
 				"new_lines": "wpautop",
 				"esc_html": 0
 			}
@@ -973,10 +1436,18 @@
 		"show_in_rest": 0
 	},
 	{
+		"qef_simple_location_rules": false,
 		"key": "group_65ee276b37a9f",
 		"title": "User Field",
 		"fields": [
 			{
+				"allow_backendsearch": false,
+				"show_column_filter": false,
+				"allow_bulkedit": false,
+				"allow_quickedit": false,
+				"show_column": false,
+				"show_column_weight": 1000,
+				"show_column_sortable": false,
 				"key": "field_65ee276b1579b",
 				"label": "User Profile Field",
 				"name": "user_profile_display_field",
@@ -1015,6 +1486,13 @@
 				"placeholder": ""
 			},
 			{
+				"allow_backendsearch": false,
+				"show_column_filter": false,
+				"allow_bulkedit": false,
+				"allow_quickedit": false,
+				"show_column": false,
+				"show_column_weight": 1000,
+				"show_column_sortable": false,
 				"key": "field_65f2168a6b8da",
 				"label": "Custom Field Key",
 				"name": "custom_field_key",
@@ -1043,6 +1521,13 @@
 				"append": ""
 			},
 			{
+				"allow_backendsearch": false,
+				"show_column_filter": false,
+				"allow_bulkedit": false,
+				"allow_quickedit": false,
+				"show_column": false,
+				"show_column_weight": 1000,
+				"show_column_sortable": false,
 				"key": "field_65ee2ca65d13d",
 				"label": "Create Link",
 				"name": "create_link",
@@ -1063,6 +1548,13 @@
 				"ui_off_text": ""
 			},
 			{
+				"allow_backendsearch": false,
+				"show_column_filter": false,
+				"allow_bulkedit": false,
+				"allow_quickedit": false,
+				"show_column": false,
+				"show_column_weight": 1000,
+				"show_column_sortable": false,
 				"key": "field_65ee2cd392752",
 				"label": "Link Type",
 				"name": "link_type",
@@ -1100,6 +1592,13 @@
 				"placeholder": ""
 			},
 			{
+				"allow_backendsearch": false,
+				"show_column_filter": false,
+				"allow_bulkedit": false,
+				"allow_quickedit": false,
+				"show_column": false,
+				"show_column_weight": 1000,
+				"show_column_sortable": false,
 				"key": "field_65ee2e1892753",
 				"label": "Custom URL",
 				"name": "custom_url",
@@ -1133,6 +1632,13 @@
 				"append": ""
 			},
 			{
+				"allow_backendsearch": false,
+				"show_column_filter": false,
+				"allow_bulkedit": false,
+				"allow_quickedit": false,
+				"show_column": false,
+				"show_column_weight": 1000,
+				"show_column_sortable": false,
 				"key": "field_65ee3410e76cf",
 				"label": "New Tab",
 				"name": "new_tab",
@@ -1161,6 +1667,13 @@
 				"ui_off_text": ""
 			},
 			{
+				"allow_backendsearch": false,
+				"show_column_filter": false,
+				"allow_bulkedit": false,
+				"allow_quickedit": false,
+				"show_column": false,
+				"show_column_weight": 1000,
+				"show_column_sortable": false,
 				"key": "field_65f2213285afc",
 				"label": "Apply Formatting",
 				"name": "apply_formatting",
@@ -1181,6 +1694,13 @@
 				"ui_off_text": ""
 			},
 			{
+				"allow_backendsearch": false,
+				"show_column_filter": false,
+				"allow_bulkedit": false,
+				"allow_quickedit": false,
+				"show_column": false,
+				"show_column_weight": 1000,
+				"show_column_sortable": false,
 				"key": "field_65f21b106b8dd",
 				"label": "Show filter (for developers)",
 				"name": "show_filter_instructions_for_developers",
@@ -1201,6 +1721,13 @@
 				"ui_off_text": ""
 			},
 			{
+				"allow_backendsearch": false,
+				"show_column_filter": false,
+				"allow_bulkedit": false,
+				"allow_quickedit": false,
+				"show_column": false,
+				"show_column_weight": 1000,
+				"show_column_sortable": false,
 				"key": "field_65f218f96b8dc",
 				"label": "Filter Usage",
 				"name": "",
