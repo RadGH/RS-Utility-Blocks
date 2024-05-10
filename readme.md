@@ -122,7 +122,7 @@ Default: 2024-04-07 11:05:47
 Formatted: "Posted 1 week ago at 11:05 am"
 
 ```php
-function my_theme_post_field_date_formatting( $value, $post_id, $display_field, $custom_field_key ) {
+function my_theme_post_field_date_formatting( $value, $post_id, $display_field, $custom_field_key, $block ) {
 	if ( $display_field === 'post_date' && empty( $value ) ) {
 		$timestamp = get_post_time( 'U', false, $post_id );
 		if ( $timestamp ) {
@@ -134,10 +134,14 @@ function my_theme_post_field_date_formatting( $value, $post_id, $display_field, 
 	
 	return $value;
 }
-add_filter( 'rs/post_field', 'my_theme_post_field_date_formatting', 10, 4 );
+add_filter( 'rs/post_field', 'my_theme_post_field_date_formatting', 10, 5 );
 ```
 
 ## Changelog
+
+### 1.3.1
+* Upgraded post field to include date formatting, featured image, image size, author links, and post modified time
+* Post field filters now support a 5th argument `$block` which contains the block settings.
 
 ### 1.3.0
 * Added mobile menu button and mobile menu container blocks
