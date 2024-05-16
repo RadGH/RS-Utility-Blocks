@@ -8,3 +8,10 @@
 .rs-mobile-menu--container:not(.open) {
 	display: none;
 }
+
+/* Hide on desktop */
+@media ( min-width: 780px ) {
+	.rs-mobile-menu--container {
+		display: none;
+	}
+}
