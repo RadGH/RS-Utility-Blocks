@@ -1,0 +1,52 @@
+{
+  "name": "rs-utility-blocks/breadcrumbs",
+  "title": "Breadcrumbs",
+  "description": "Display a list of links that represent the path to the current page.",
+  "style": ["file:./breadcrumbs.css"],
+  "category": "design",
+  "icon": "arrow-right-alt",
+  "keywords": [ "breadcrumbs", "navigation", "path" ],
+  "supports": {
+    "align": true,
+    "anchor": true,
+    "color": {
+      "text": true,
+      "background": false,
+      "gradients": true,
+      "link": true
+    },
+    "customClassName": true,
+    "layout": {
+      "allowJustification": false,
+      "allowSwitching": false,
+      "allowInheriting": false,
+      "allowEditing": false,
+      "default": {
+        "type": "flex"
+      }
+    },
+    "spacing": {
+      "margin": true,
+      "padding": true,
+      "blockGap": false
+    },
+    "typography": {
+      "fontSize": true,
+      "lineHeight": true,
+      "FontFamily": true,
+      "FontWeight": true,
+      "FontStyle": true,
+      "TextTransform": true,
+      "LetterSpacing": true,
+      "__experimentalFontFamily": true,
+      "__experimentalFontWeight": true,
+      "__experimentalFontStyle": true,
+      "__experimentalTextTransform": true,
+      "__experimentalLetterSpacing": true
+    }
+  },
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "breadcrumbs.php"
+  }
+}

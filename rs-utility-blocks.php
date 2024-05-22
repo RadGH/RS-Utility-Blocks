@@ -39,6 +39,7 @@ class RS_Utility_Blocks {
 		// 3. Load plugin files
 		require_once( RS_Utility_Blocks_PATH . '/includes/setup.php' );
 		require_once( RS_Utility_Blocks_PATH . '/includes/profile.php' );
+		require_once( RS_Utility_Blocks_PATH . '/includes/functions.php' );
 		
 	}
 	

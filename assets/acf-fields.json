@@ -1,17 +1,73 @@
 [
 	{
-		"qef_simple_location_rules": false,
+		"key": "group_664541a6c348d",
+		"title": "Breadcrumbs",
+		"fields": [
+			{
+				"key": "field_664e674756c02",
+				"label": "Separator",
+				"name": "separator",
+				"aria-label": "",
+				"type": "text",
+				"instructions": "",
+				"required": 0,
+				"conditional_logic": 0,
+				"wrapper": {
+					"width": "",
+					"class": "",
+					"id": ""
+				},
+				"default_value": "\/",
+				"maxlength": "",
+				"placeholder": "",
+				"prepend": "",
+				"append": ""
+			},
+			{
+				"key": "field_664e674c56c03",
+				"label": "Show home",
+				"name": "show_home",
+				"aria-label": "",
+				"type": "text",
+				"instructions": "",
+				"required": 0,
+				"conditional_logic": 0,
+				"wrapper": {
+					"width": "",
+					"class": "acf-hide-label",
+					"id": ""
+				},
+				"default_value": "Show home",
+				"maxlength": "",
+				"placeholder": "",
+				"prepend": "",
+				"append": ""
+			}
+		],
+		"location": [
+			[
+				{
+					"param": "block",
+					"operator": "==",
+					"value": "rs-utility-blocks\/breadcrumbs"
+				}
+			]
+		],
+		"menu_order": 0,
+		"position": "normal",
+		"style": "default",
+		"label_placement": "top",
+		"instruction_placement": "label",
+		"hide_on_screen": "",
+		"active": true,
+		"description": "[RS Utility Blocks] ACF Block -> Breadcrumbs",
+		"show_in_rest": 0
+	},
+	{
 		"key": "group_6619885838faf",
 		"title": "Edit Profile",
 		"fields": [
 			{
-				"allow_backendsearch": false,
-				"show_column_filter": false,
-				"allow_bulkedit": false,
-				"allow_quickedit": false,
-				"show_column": false,
-				"show_column_weight": 1000,
-				"show_column_sortable": false,
 				"key": "field_66198857c8070",
 				"label": "Fields",
 				"name": "fields",
@@ -25,6 +81,13 @@
 					"class": "",
 					"id": ""
 				},
+				"allow_backendsearch": false,
+				"show_column_filter": false,
+				"allow_bulkedit": false,
+				"allow_quickedit": false,
+				"show_column": false,
+				"show_column_weight": 1000,
+				"show_column_sortable": false,
 				"choices": {
 					"name": "Name",
 					"email": "Email",
@@ -45,13 +108,6 @@
 				"placeholder": ""
 			},
 			{
-				"allow_backendsearch": false,
-				"show_column_filter": false,
-				"allow_bulkedit": false,
-				"allow_quickedit": false,
-				"show_column": false,
-				"show_column_weight": 1000,
-				"show_column_sortable": false,
 				"key": "field_66199f4675802",
 				"label": "Show Confirm Email",
 				"name": "show_confirm_email",
@@ -73,13 +129,6 @@
 					"class": "acf-hide-label",
 					"id": ""
 				},
-				"message": "Show confirm email field",
-				"default_value": 0,
-				"ui": 0,
-				"ui_on_text": "",
-				"ui_off_text": ""
-			},
-			{
 				"allow_backendsearch": false,
 				"show_column_filter": false,
 				"allow_bulkedit": false,
@@ -87,6 +136,13 @@
 				"show_column": false,
 				"show_column_weight": 1000,
 				"show_column_sortable": false,
+				"message": "Show confirm email field",
+				"default_value": 0,
+				"ui": 0,
+				"ui_on_text": "",
+				"ui_off_text": ""
+			},
+			{
 				"key": "field_6619a0a6c5e45",
 				"label": "Show Confirm Password",
 				"name": "show_confirm_password",
@@ -108,6 +164,13 @@
 					"class": "acf-hide-label",
 					"id": ""
 				},
+				"allow_backendsearch": false,
+				"show_column_filter": false,
+				"allow_bulkedit": false,
+				"allow_quickedit": false,
+				"show_column": false,
+				"show_column_weight": 1000,
+				"show_column_sortable": false,
 				"message": "Show confirm password field",
 				"default_value": 0,
 				"ui": 0,
@@ -132,21 +195,14 @@
 		"hide_on_screen": "",
 		"active": true,
 		"description": "[RS Utility Blocks] ACF Block -> Edit Profile",
-		"show_in_rest": 0
+		"show_in_rest": 0,
+		"qef_simple_location_rules": false
 	},
 	{
-		"qef_simple_location_rules": false,
 		"key": "group_66394f3e0d9ca",
 		"title": "Link Block",
 		"fields": [
 			{
-				"allow_backendsearch": false,
-				"show_column_filter": false,
-				"allow_bulkedit": false,
-				"allow_quickedit": false,
-				"show_column": false,
-				"show_column_weight": 1000,
-				"show_column_sortable": false,
 				"key": "field_66394f422742a",
 				"label": "URL",
 				"name": "url",
@@ -160,13 +216,6 @@
 					"class": "",
 					"id": ""
 				},
-				"default_value": "",
-				"maxlength": "",
-				"placeholder": "",
-				"prepend": "",
-				"append": ""
-			},
-			{
 				"allow_backendsearch": false,
 				"show_column_filter": false,
 				"allow_bulkedit": false,
@@ -174,6 +223,13 @@
 				"show_column": false,
 				"show_column_weight": 1000,
 				"show_column_sortable": false,
+				"default_value": "",
+				"maxlength": "",
+				"placeholder": "",
+				"prepend": "",
+				"append": ""
+			},
+			{
 				"key": "field_66394f5e2742b",
 				"label": "New Tab",
 				"name": "new_tab",
@@ -187,13 +243,6 @@
 					"class": "acf-hide-label",
 					"id": ""
 				},
-				"message": "Open in new tab",
-				"default_value": 0,
-				"ui": 0,
-				"ui_on_text": "",
-				"ui_off_text": ""
-			},
-			{
 				"allow_backendsearch": false,
 				"show_column_filter": false,
 				"allow_bulkedit": false,
@@ -201,6 +250,13 @@
 				"show_column": false,
 				"show_column_weight": 1000,
 				"show_column_sortable": false,
+				"message": "Open in new tab",
+				"default_value": 0,
+				"ui": 0,
+				"ui_on_text": "",
+				"ui_off_text": ""
+			},
+			{
 				"key": "field_66394f6b2742c",
 				"label": "Title (Hover Tooltip)",
 				"name": "title",
@@ -214,6 +270,13 @@
 					"class": "",
 					"id": ""
 				},
+				"allow_backendsearch": false,
+				"show_column_filter": false,
+				"allow_bulkedit": false,
+				"allow_quickedit": false,
+				"show_column": false,
+				"show_column_weight": 1000,
+				"show_column_sortable": false,
 				"default_value": "",
 				"maxlength": "",
 				"placeholder": "",
@@ -238,21 +301,14 @@
 		"hide_on_screen": "",
 		"active": true,
 		"description": "[RS Utility Blocks] ACF Block -> Link Block",
-		"show_in_rest": 0
+		"show_in_rest": 0,
+		"qef_simple_location_rules": false
 	},
 	{
-		"qef_simple_location_rules": false,
 		"key": "group_65f2e54f471c2",
 		"title": "Login Form",
 		"fields": [
 			{
-				"allow_backendsearch": false,
-				"show_column_filter": false,
-				"allow_bulkedit": false,
-				"allow_quickedit": false,
-				"show_column": false,
-				"show_column_weight": 1000,
-				"show_column_sortable": false,
 				"key": "field_65f2e54f00886",
 				"label": "Settings",
 				"name": "settings",
@@ -266,6 +322,13 @@
 					"class": "",
 					"id": ""
 				},
+				"allow_backendsearch": false,
+				"show_column_filter": false,
+				"allow_bulkedit": false,
+				"allow_quickedit": false,
+				"show_column": false,
+				"show_column_weight": 1000,
+				"show_column_sortable": false,
 				"choices": {
 					"show_forgot_password": "Show forgot password",
 					"show_logout_link": "Show logout link (if logged in)",
@@ -281,13 +344,6 @@
 				"custom_choice_button_text": "Add new choice"
 			},
 			{
-				"allow_backendsearch": false,
-				"show_column_filter": false,
-				"allow_bulkedit": false,
-				"allow_quickedit": false,
-				"show_column": false,
-				"show_column_weight": 1000,
-				"show_column_sortable": false,
 				"key": "field_65f2e57f00887",
 				"label": "Create Account URL",
 				"name": "create_account_url",
@@ -309,13 +365,6 @@
 					"class": "",
 					"id": ""
 				},
-				"default_value": "",
-				"maxlength": "",
-				"placeholder": "",
-				"prepend": "",
-				"append": ""
-			},
-			{
 				"allow_backendsearch": false,
 				"show_column_filter": false,
 				"allow_bulkedit": false,
@@ -323,6 +372,13 @@
 				"show_column": false,
 				"show_column_weight": 1000,
 				"show_column_sortable": false,
+				"default_value": "",
+				"maxlength": "",
+				"placeholder": "",
+				"prepend": "",
+				"append": ""
+			},
+			{
 				"key": "field_65f2ef6272a08",
 				"label": "Login Redirect",
 				"name": "login_redirect",
@@ -336,6 +392,13 @@
 					"class": "",
 					"id": ""
 				},
+				"allow_backendsearch": false,
+				"show_column_filter": false,
+				"allow_bulkedit": false,
+				"allow_quickedit": false,
+				"show_column": false,
+				"show_column_weight": 1000,
+				"show_column_sortable": false,
 				"default_value": "",
 				"maxlength": "",
 				"placeholder": "",
@@ -360,21 +423,14 @@
 		"hide_on_screen": "",
 		"active": true,
 		"description": "[RS Utility Blocks] ACF Block -> Login Form",
-		"show_in_rest": 0
+		"show_in_rest": 0,
+		"qef_simple_location_rules": false
 	},
 	{
-		"qef_simple_location_rules": false,
 		"key": "group_663aa1c0cafe3",
 		"title": "Mobile Menu Button",
 		"fields": [
 			{
-				"allow_backendsearch": false,
-				"show_column_filter": false,
-				"allow_bulkedit": false,
-				"allow_quickedit": false,
-				"show_column": false,
-				"show_column_weight": 1000,
-				"show_column_sortable": false,
 				"key": "field_663aa1c68ed43",
 				"label": "Menu Slug",
 				"name": "menu_slug",
@@ -388,13 +444,6 @@
 					"class": "",
 					"id": ""
 				},
-				"default_value": "",
-				"maxlength": "",
-				"placeholder": "",
-				"prepend": "",
-				"append": ""
-			},
-			{
 				"allow_backendsearch": false,
 				"show_column_filter": false,
 				"allow_bulkedit": false,
@@ -402,6 +451,13 @@
 				"show_column": false,
 				"show_column_weight": 1000,
 				"show_column_sortable": false,
+				"default_value": "",
+				"maxlength": "",
+				"placeholder": "",
+				"prepend": "",
+				"append": ""
+			},
+			{
 				"key": "field_663aa202dbda2",
 				"label": "Appearance",
 				"name": "appearance",
@@ -415,6 +471,13 @@
 					"class": "",
 					"id": ""
 				},
+				"allow_backendsearch": false,
+				"show_column_filter": false,
+				"allow_bulkedit": false,
+				"allow_quickedit": false,
+				"show_column": false,
+				"show_column_weight": 1000,
+				"show_column_sortable": false,
 				"choices": {
 					"icon": "Icon Only",
 					"text": "Text Only",
@@ -429,13 +492,6 @@
 				"placeholder": ""
 			},
 			{
-				"allow_backendsearch": false,
-				"show_column_filter": false,
-				"allow_bulkedit": false,
-				"allow_quickedit": false,
-				"show_column": false,
-				"show_column_weight": 1000,
-				"show_column_sortable": false,
 				"key": "field_663aa227dbda3",
 				"label": "Open Text",
 				"name": "open_text",
@@ -464,13 +520,6 @@
 					"class": "",
 					"id": ""
 				},
-				"default_value": "Menu",
-				"maxlength": "",
-				"placeholder": "",
-				"prepend": "",
-				"append": ""
-			},
-			{
 				"allow_backendsearch": false,
 				"show_column_filter": false,
 				"allow_bulkedit": false,
@@ -478,6 +527,13 @@
 				"show_column": false,
 				"show_column_weight": 1000,
 				"show_column_sortable": false,
+				"default_value": "Menu",
+				"maxlength": "",
+				"placeholder": "",
+				"prepend": "",
+				"append": ""
+			},
+			{
 				"key": "field_663aa23fdbda5",
 				"label": "Close Text",
 				"name": "close_text",
@@ -506,13 +562,6 @@
 					"class": "",
 					"id": ""
 				},
-				"default_value": "Close",
-				"maxlength": "",
-				"placeholder": "",
-				"prepend": "",
-				"append": ""
-			},
-			{
 				"allow_backendsearch": false,
 				"show_column_filter": false,
 				"allow_bulkedit": false,
@@ -520,6 +569,13 @@
 				"show_column": false,
 				"show_column_weight": 1000,
 				"show_column_sortable": false,
+				"default_value": "Close",
+				"maxlength": "",
+				"placeholder": "",
+				"prepend": "",
+				"append": ""
+			},
+			{
 				"key": "field_663aa288dbda8",
 				"label": "Open Icon Type",
 				"name": "open_icon_type",
@@ -548,6 +604,13 @@
 					"class": "",
 					"id": ""
 				},
+				"allow_backendsearch": false,
+				"show_column_filter": false,
+				"allow_bulkedit": false,
+				"allow_quickedit": false,
+				"show_column": false,
+				"show_column_weight": 1000,
+				"show_column_sortable": false,
 				"choices": {
 					"dashicons-menu": "<span title=\"Menu\" class=\"dashicons dashicons-menu\"><\/span>",
 					"dashicons-menu-alt": "<span title=\"Menu Alt\" class=\"dashicons dashicons-menu-alt\"><\/span>",
@@ -562,13 +625,6 @@
 				"layout": "horizontal"
 			},
 			{
-				"allow_backendsearch": false,
-				"show_column_filter": false,
-				"allow_bulkedit": false,
-				"allow_quickedit": false,
-				"show_column": false,
-				"show_column_weight": 1000,
-				"show_column_sortable": false,
 				"key": "field_663aa24bdbda6",
 				"label": "Custom Open Icon",
 				"name": "custom_open_icon",
@@ -607,6 +663,13 @@
 					"class": "",
 					"id": ""
 				},
+				"allow_backendsearch": false,
+				"show_column_filter": false,
+				"allow_bulkedit": false,
+				"allow_quickedit": false,
+				"show_column": false,
+				"show_column_weight": 1000,
+				"show_column_sortable": false,
 				"return_format": "id",
 				"library": "all",
 				"min_width": "",
@@ -619,13 +682,6 @@
 				"preview_size": "medium"
 			},
 			{
-				"allow_backendsearch": false,
-				"show_column_filter": false,
-				"allow_bulkedit": false,
-				"allow_quickedit": false,
-				"show_column": false,
-				"show_column_weight": 1000,
-				"show_column_sortable": false,
 				"key": "field_663aa3134ba21",
 				"label": "Close Icon Type",
 				"name": "close_icon_type",
@@ -654,6 +710,13 @@
 					"class": "",
 					"id": ""
 				},
+				"allow_backendsearch": false,
+				"show_column_filter": false,
+				"allow_bulkedit": false,
+				"allow_quickedit": false,
+				"show_column": false,
+				"show_column_weight": 1000,
+				"show_column_sortable": false,
 				"choices": {
 					"dashicons-no": "<span title=\"Close\" class=\"dashicons dashicons-no\"><\/span>",
 					"dashicons-no-alt": "<span title=\"Close Alt\" class=\"dashicons dashicons-no-alt\"><\/span>",
@@ -666,13 +729,6 @@
 				"layout": "horizontal"
 			},
 			{
-				"allow_backendsearch": false,
-				"show_column_filter": false,
-				"allow_bulkedit": false,
-				"allow_quickedit": false,
-				"show_column": false,
-				"show_column_weight": 1000,
-				"show_column_sortable": false,
 				"key": "field_663aa3524ba22",
 				"label": "Custom Close Icon",
 				"name": "custom_close_icon",
@@ -711,6 +767,13 @@
 					"class": "",
 					"id": ""
 				},
+				"allow_backendsearch": false,
+				"show_column_filter": false,
+				"allow_bulkedit": false,
+				"allow_quickedit": false,
+				"show_column": false,
+				"show_column_weight": 1000,
+				"show_column_sortable": false,
 				"return_format": "id",
 				"library": "all",
 				"min_width": "",
@@ -723,13 +786,6 @@
 				"preview_size": "medium"
 			},
 			{
-				"allow_backendsearch": false,
-				"show_column_filter": false,
-				"allow_bulkedit": false,
-				"allow_quickedit": false,
-				"show_column": false,
-				"show_column_weight": 1000,
-				"show_column_sortable": false,
 				"key": "field_663aa575edfc0",
 				"label": "Icon Text Placement",
 				"name": "icon_text_placement",
@@ -751,6 +807,13 @@
 					"class": "",
 					"id": ""
 				},
+				"allow_backendsearch": false,
+				"show_column_filter": false,
+				"allow_bulkedit": false,
+				"allow_quickedit": false,
+				"show_column": false,
+				"show_column_weight": 1000,
+				"show_column_sortable": false,
 				"choices": {
 					"icon-first": "Icon after Text",
 					"text-first": "Text after Icon"
@@ -780,21 +843,14 @@
 		"hide_on_screen": "",
 		"active": true,
 		"description": "[RS Utility Blocks] ACF Block -> Mobile Menu Button",
-		"show_in_rest": 0
+		"show_in_rest": 0,
+		"qef_simple_location_rules": false
 	},
 	{
-		"qef_simple_location_rules": false,
 		"key": "group_663ab48c54d97",
 		"title": "Mobile Menu Container",
 		"fields": [
 			{
-				"allow_backendsearch": false,
-				"show_column_filter": false,
-				"allow_bulkedit": false,
-				"allow_quickedit": false,
-				"show_column": false,
-				"show_column_weight": 1000,
-				"show_column_sortable": false,
 				"key": "field_663ab491e94d3",
 				"label": "Menu Slug",
 				"name": "menu_slug",
@@ -808,6 +864,13 @@
 					"class": "",
 					"id": ""
 				},
+				"allow_backendsearch": false,
+				"show_column_filter": false,
+				"allow_bulkedit": false,
+				"allow_quickedit": false,
+				"show_column": false,
+				"show_column_weight": 1000,
+				"show_column_sortable": false,
 				"default_value": "",
 				"maxlength": "",
 				"placeholder": "",
@@ -832,21 +895,14 @@
 		"hide_on_screen": "",
 		"active": true,
 		"description": "[RS Utility Blocks] ACF Block -> Mobile Menu Container",
-		"show_in_rest": 0
+		"show_in_rest": 0,
+		"qef_simple_location_rules": false
 	},
 	{
-		"qef_simple_location_rules": 0,
 		"key": "group_65f2327831337",
 		"title": "Post Field",
 		"fields": [
 			{
-				"allow_backendsearch": false,
-				"show_column_filter": 0,
-				"allow_bulkedit": 0,
-				"allow_quickedit": 0,
-				"show_column": 0,
-				"show_column_weight": 1000,
-				"show_column_sortable": false,
 				"key": "field_663e504fa21d5",
 				"label": "Selection",
 				"name": "selection",
@@ -860,6 +916,13 @@
 					"class": "",
 					"id": ""
 				},
+				"allow_backendsearch": false,
+				"show_column_filter": 0,
+				"allow_bulkedit": 0,
+				"allow_quickedit": 0,
+				"show_column": 0,
+				"show_column_weight": 1000,
+				"show_column_sortable": false,
 				"choices": {
 					"post": "Current post",
 					"post_parent": "Parent post",
@@ -874,13 +937,6 @@
 				"placeholder": ""
 			},
 			{
-				"allow_backendsearch": false,
-				"show_column_filter": false,
-				"allow_bulkedit": 0,
-				"allow_quickedit": 0,
-				"show_column": 0,
-				"show_column_weight": 1000,
-				"show_column_sortable": false,
 				"key": "field_663e5118a21d6",
 				"label": "Specific Post",
 				"name": "specific_post",
@@ -902,6 +958,13 @@
 					"class": "",
 					"id": ""
 				},
+				"allow_backendsearch": false,
+				"show_column_filter": false,
+				"allow_bulkedit": 0,
+				"allow_quickedit": 0,
+				"show_column": 0,
+				"show_column_weight": 1000,
+				"show_column_sortable": false,
 				"post_type": "",
 				"post_status": "",
 				"taxonomy": "",
@@ -913,13 +976,6 @@
 				"bidirectional_target": []
 			},
 			{
-				"allow_backendsearch": false,
-				"show_column_filter": 0,
-				"allow_bulkedit": 0,
-				"allow_quickedit": 0,
-				"show_column": 0,
-				"show_column_weight": 1000,
-				"show_column_sortable": false,
 				"key": "field_65f23278347e0",
 				"label": "Post Field",
 				"name": "post_display_field",
@@ -933,6 +989,13 @@
 					"class": "",
 					"id": ""
 				},
+				"allow_backendsearch": false,
+				"show_column_filter": 0,
+				"allow_bulkedit": 0,
+				"allow_quickedit": 0,
+				"show_column": 0,
+				"show_column_weight": 1000,
+				"show_column_sortable": false,
 				"choices": {
 					"ID": "ID",
 					"post_author": "Author",
@@ -962,13 +1025,6 @@
 				"placeholder": ""
 			},
 			{
-				"allow_backendsearch": false,
-				"show_column_filter": 0,
-				"allow_bulkedit": 0,
-				"allow_quickedit": 0,
-				"show_column": 0,
-				"show_column_weight": 1000,
-				"show_column_sortable": false,
 				"key": "field_663e5b96ab779",
 				"label": "Image Size",
 				"name": "image_size",
@@ -990,6 +1046,13 @@
 					"class": "",
 					"id": ""
 				},
+				"allow_backendsearch": false,
+				"show_column_filter": 0,
+				"allow_bulkedit": 0,
+				"allow_quickedit": 0,
+				"show_column": 0,
+				"show_column_weight": 1000,
+				"show_column_sortable": false,
 				"choices": {
 					"thumbnail": "Thumbnail (150x150, cropped)",
 					"medium": "Medium (300x300)",
@@ -1007,13 +1070,6 @@
 				"placeholder": ""
 			},
 			{
-				"allow_backendsearch": false,
-				"show_column_filter": 0,
-				"allow_bulkedit": 0,
-				"allow_quickedit": 0,
-				"show_column": 0,
-				"show_column_weight": 1000,
-				"show_column_sortable": false,
 				"key": "field_663e5c09260ad",
 				"label": "Date Format",
 				"name": "date_format",
@@ -1063,16 +1119,23 @@
 					"class": "",
 					"id": ""
 				},
+				"allow_backendsearch": false,
+				"show_column_filter": 0,
+				"allow_bulkedit": 0,
+				"allow_quickedit": 0,
+				"show_column": 0,
+				"show_column_weight": 1000,
+				"show_column_sortable": false,
 				"choices": {
-					"F j, Y": "May 10, 2024 (Site Default)",
-					"F j, Y g:i a": "May 10, 2024 11:39 am (Site Default)",
-					"F j": "May 10",
-					"Y-m-d": "2024-05-10",
-					"Y-m-d H:i:s": "2024-05-10 11:39:22",
-					"m\/d\/Y": "05\/10\/2024",
-					"m\/d\/Y g:i a": "05\/10\/2024 11:39 am",
-					"d\/m\/Y": "10\/05\/2024",
-					"d\/m\/Y g:i a": "10\/05\/2024 11:39 am",
+					"F j, Y": "May 22, 2024 (Site Default)",
+					"F j, Y g:i a": "May 22, 2024 2:47 pm (Site Default)",
+					"F j": "May 22",
+					"Y-m-d": "2024-05-22",
+					"Y-m-d H:i:s": "2024-05-22 14:47:57",
+					"m\/d\/Y": "05\/22\/2024",
+					"m\/d\/Y g:i a": "05\/22\/2024 2:47 pm",
+					"d\/m\/Y": "22\/05\/2024",
+					"d\/m\/Y g:i a": "22\/05\/2024 2:47 pm",
 					"relative": "Relative",
 					"custom": "Custom"
 				},
@@ -1085,13 +1148,6 @@
 				"placeholder": ""
 			},
 			{
-				"allow_backendsearch": 0,
-				"show_column_filter": false,
-				"allow_bulkedit": 0,
-				"allow_quickedit": 0,
-				"show_column": 0,
-				"show_column_weight": 1000,
-				"show_column_sortable": false,
 				"key": "field_663e665bdc957",
 				"label": "Date Format (Custom)",
 				"name": "date_format_custom",
@@ -1113,6 +1169,13 @@
 					"class": "",
 					"id": ""
 				},
+				"allow_backendsearch": 0,
+				"show_column_filter": false,
+				"allow_bulkedit": 0,
+				"allow_quickedit": 0,
+				"show_column": 0,
+				"show_column_weight": 1000,
+				"show_column_sortable": false,
 				"default_value": "F j, Y",
 				"maxlength": "",
 				"placeholder": "",
@@ -1120,13 +1183,6 @@
 				"append": ""
 			},
 			{
-				"allow_backendsearch": false,
-				"show_column_filter": false,
-				"allow_bulkedit": false,
-				"allow_quickedit": false,
-				"show_column": false,
-				"show_column_weight": 1000,
-				"show_column_sortable": false,
 				"key": "field_65f23278383c1",
 				"label": "Custom Field Key",
 				"name": "custom_field_key",
@@ -1148,6 +1204,13 @@
 					"class": "",
 					"id": ""
 				},
+				"allow_backendsearch": false,
+				"show_column_filter": false,
+				"allow_bulkedit": false,
+				"allow_quickedit": false,
+				"show_column": false,
+				"show_column_weight": 1000,
+				"show_column_sortable": false,
 				"default_value": "",
 				"maxlength": "",
 				"placeholder": "first_name",
@@ -1155,13 +1218,6 @@
 				"append": ""
 			},
 			{
-				"allow_backendsearch": 0,
-				"show_column_filter": false,
-				"allow_bulkedit": 0,
-				"allow_quickedit": 0,
-				"show_column": 0,
-				"show_column_weight": 1000,
-				"show_column_sortable": false,
 				"key": "field_663e515ea21d7",
 				"label": "Default Value",
 				"name": "default_value",
@@ -1175,6 +1231,13 @@
 					"class": "",
 					"id": ""
 				},
+				"allow_backendsearch": 0,
+				"show_column_filter": false,
+				"allow_bulkedit": 0,
+				"allow_quickedit": 0,
+				"show_column": 0,
+				"show_column_weight": 1000,
+				"show_column_sortable": false,
 				"default_value": "",
 				"maxlength": "",
 				"placeholder": "",
@@ -1182,13 +1245,6 @@
 				"append": ""
 			},
 			{
-				"allow_backendsearch": false,
-				"show_column_filter": false,
-				"allow_bulkedit": false,
-				"allow_quickedit": false,
-				"show_column": false,
-				"show_column_weight": 1000,
-				"show_column_sortable": false,
 				"key": "field_65f232783bd00",
 				"label": "Create Link",
 				"name": "create_link",
@@ -1202,6 +1258,13 @@
 					"class": "acf-hide-label",
 					"id": ""
 				},
+				"allow_backendsearch": false,
+				"show_column_filter": false,
+				"allow_bulkedit": false,
+				"allow_quickedit": false,
+				"show_column": false,
+				"show_column_weight": 1000,
+				"show_column_sortable": false,
 				"message": "Link to this field",
 				"default_value": 0,
 				"ui": 0,
@@ -1209,13 +1272,6 @@
 				"ui_off_text": ""
 			},
 			{
-				"allow_backendsearch": false,
-				"show_column_filter": 0,
-				"allow_bulkedit": 0,
-				"allow_quickedit": 0,
-				"show_column": 0,
-				"show_column_weight": 1000,
-				"show_column_sortable": false,
 				"key": "field_65f2327843203",
 				"label": "Link Type",
 				"name": "link_type",
@@ -1237,6 +1293,13 @@
 					"class": "",
 					"id": ""
 				},
+				"allow_backendsearch": false,
+				"show_column_filter": 0,
+				"allow_bulkedit": 0,
+				"allow_quickedit": 0,
+				"show_column": 0,
+				"show_column_weight": 1000,
+				"show_column_sortable": false,
 				"choices": {
 					"post": "Permalink",
 					"archive": "Post Type Archive",
@@ -1254,13 +1317,6 @@
 				"placeholder": ""
 			},
 			{
-				"allow_backendsearch": false,
-				"show_column_filter": false,
-				"allow_bulkedit": false,
-				"allow_quickedit": false,
-				"show_column": false,
-				"show_column_weight": 1000,
-				"show_column_sortable": false,
 				"key": "field_65f2327846ea4",
 				"label": "Custom URL",
 				"name": "custom_url",
@@ -1287,13 +1343,6 @@
 					"class": "",
 					"id": ""
 				},
-				"default_value": "",
-				"maxlength": "",
-				"placeholder": "",
-				"prepend": "",
-				"append": ""
-			},
-			{
 				"allow_backendsearch": false,
 				"show_column_filter": false,
 				"allow_bulkedit": false,
@@ -1301,6 +1350,13 @@
 				"show_column": false,
 				"show_column_weight": 1000,
 				"show_column_sortable": false,
+				"default_value": "",
+				"maxlength": "",
+				"placeholder": "",
+				"prepend": "",
+				"append": ""
+			},
+			{
 				"key": "field_65f232783f7ae",
 				"label": "New Tab",
 				"name": "new_tab",
@@ -1322,6 +1378,13 @@
 					"class": "acf-hide-label",
 					"id": ""
 				},
+				"allow_backendsearch": false,
+				"show_column_filter": false,
+				"allow_bulkedit": false,
+				"allow_quickedit": false,
+				"show_column": false,
+				"show_column_weight": 1000,
+				"show_column_sortable": false,
 				"message": "Open link in new tab",
 				"default_value": 0,
 				"ui": 0,
@@ -1329,13 +1392,6 @@
 				"ui_off_text": ""
 			},
 			{
-				"allow_backendsearch": false,
-				"show_column_filter": 0,
-				"allow_bulkedit": 0,
-				"allow_quickedit": 0,
-				"show_column": 0,
-				"show_column_weight": 1000,
-				"show_column_sortable": false,
 				"key": "field_65f232784a86e",
 				"label": "Apply Formatting",
 				"name": "apply_formatting",
@@ -1349,6 +1405,13 @@
 					"class": "acf-hide-label",
 					"id": ""
 				},
+				"allow_backendsearch": false,
+				"show_column_filter": 0,
+				"allow_bulkedit": 0,
+				"allow_quickedit": 0,
+				"show_column": 0,
+				"show_column_weight": 1000,
+				"show_column_sortable": false,
 				"message": "Apply paragraph formatting",
 				"default_value": 0,
 				"ui": 0,
@@ -1356,13 +1419,6 @@
 				"ui_off_text": ""
 			},
 			{
-				"allow_backendsearch": false,
-				"show_column_filter": false,
-				"allow_bulkedit": false,
-				"allow_quickedit": false,
-				"show_column": false,
-				"show_column_weight": 1000,
-				"show_column_sortable": false,
 				"key": "field_65f232784e3d4",
 				"label": "Show filter (for developers)",
 				"name": "show_filter_instructions_for_developers",
@@ -1376,13 +1432,6 @@
 					"class": "acf-hide-label",
 					"id": ""
 				},
-				"message": "Show filter (for developers)",
-				"default_value": 0,
-				"ui": 0,
-				"ui_on_text": "",
-				"ui_off_text": ""
-			},
-			{
 				"allow_backendsearch": false,
 				"show_column_filter": false,
 				"allow_bulkedit": false,
@@ -1390,6 +1439,13 @@
 				"show_column": false,
 				"show_column_weight": 1000,
 				"show_column_sortable": false,
+				"message": "Show filter (for developers)",
+				"default_value": 0,
+				"ui": 0,
+				"ui_on_text": "",
+				"ui_off_text": ""
+			},
+			{
 				"key": "field_65f2327852088",
 				"label": "Filter Usage",
 				"name": "",
@@ -1411,6 +1467,13 @@
 					"class": "acf-hide-label",
 					"id": ""
 				},
+				"allow_backendsearch": false,
+				"show_column_filter": false,
+				"allow_bulkedit": false,
+				"allow_quickedit": false,
+				"show_column": false,
+				"show_column_weight": 1000,
+				"show_column_sortable": false,
 				"message": "<p>Developers can change the value of this block using a filter, for example:<\/p>\r\n\r\n<pre class=\"code\" style=\"overflow: auto; padding: 5px; background: #00000010;\">add_filter( 'rs\/post_field', function( $value, $post_id, $display_field, $custom_field_key, $block ) {\r\n    \/\/ Example values:\r\n    \/\/ $value = null\r\n    \/\/ $post_id = Post ID\r\n    \/\/ $display_field = \"custom_field\"\r\n    \/\/ $custom_field_key = \"birthday\"\r\n    \/\/ $block = array\r\n\r\n    \/\/ [Example] Apply date formatting to a custom date field\r\n    if ( $display_field == 'custom_field' && $field_key == 'expiration_date' ) {\r\n        $value = get_post_meta( $post_id, 'expiration_date', true );\r\n        if ( $value ) $value = date( 'F j, Y', strtotime($value) );\r\n    }\r\n\r\n    return $value;\r\n}, 10, 4);<\/pre>",
 				"new_lines": "wpautop",
 				"esc_html": 0
@@ -1433,21 +1496,14 @@
 		"hide_on_screen": "",
 		"active": true,
 		"description": "[RS Utility Blocks] ACF Block -> Post Field",
-		"show_in_rest": 0
+		"show_in_rest": 0,
+		"qef_simple_location_rules": 0
 	},
 	{
-		"qef_simple_location_rules": false,
 		"key": "group_65ee276b37a9f",
 		"title": "User Field",
 		"fields": [
 			{
-				"allow_backendsearch": false,
-				"show_column_filter": false,
-				"allow_bulkedit": false,
-				"allow_quickedit": false,
-				"show_column": false,
-				"show_column_weight": 1000,
-				"show_column_sortable": false,
 				"key": "field_65ee276b1579b",
 				"label": "User Profile Field",
 				"name": "user_profile_display_field",
@@ -1461,6 +1517,13 @@
 					"class": "",
 					"id": ""
 				},
+				"allow_backendsearch": false,
+				"show_column_filter": false,
+				"allow_bulkedit": false,
+				"allow_quickedit": false,
+				"show_column": false,
+				"show_column_weight": 1000,
+				"show_column_sortable": false,
 				"choices": {
 					"ID": "ID",
 					"user_login": "Username",
@@ -1486,13 +1549,6 @@
 				"placeholder": ""
 			},
 			{
-				"allow_backendsearch": false,
-				"show_column_filter": false,
-				"allow_bulkedit": false,
-				"allow_quickedit": false,
-				"show_column": false,
-				"show_column_weight": 1000,
-				"show_column_sortable": false,
 				"key": "field_65f2168a6b8da",
 				"label": "Custom Field Key",
 				"name": "custom_field_key",
@@ -1514,13 +1570,6 @@
 					"class": "",
 					"id": ""
 				},
-				"default_value": "",
-				"maxlength": "",
-				"placeholder": "first_name",
-				"prepend": "",
-				"append": ""
-			},
-			{
 				"allow_backendsearch": false,
 				"show_column_filter": false,
 				"allow_bulkedit": false,
@@ -1528,6 +1577,13 @@
 				"show_column": false,
 				"show_column_weight": 1000,
 				"show_column_sortable": false,
+				"default_value": "",
+				"maxlength": "",
+				"placeholder": "first_name",
+				"prepend": "",
+				"append": ""
+			},
+			{
 				"key": "field_65ee2ca65d13d",
 				"label": "Create Link",
 				"name": "create_link",
@@ -1541,13 +1597,6 @@
 					"class": "acf-hide-label",
 					"id": ""
 				},
-				"message": "Link to this field",
-				"default_value": 0,
-				"ui": 0,
-				"ui_on_text": "",
-				"ui_off_text": ""
-			},
-			{
 				"allow_backendsearch": false,
 				"show_column_filter": false,
 				"allow_bulkedit": false,
@@ -1555,6 +1604,13 @@
 				"show_column": false,
 				"show_column_weight": 1000,
 				"show_column_sortable": false,
+				"message": "Link to this field",
+				"default_value": 0,
+				"ui": 0,
+				"ui_on_text": "",
+				"ui_off_text": ""
+			},
+			{
 				"key": "field_65ee2cd392752",
 				"label": "Link Type",
 				"name": "link_type",
@@ -1576,6 +1632,13 @@
 					"class": "",
 					"id": ""
 				},
+				"allow_backendsearch": false,
+				"show_column_filter": false,
+				"allow_bulkedit": false,
+				"allow_quickedit": false,
+				"show_column": false,
+				"show_column_weight": 1000,
+				"show_column_sortable": false,
 				"choices": {
 					"profile": "Edit Profile",
 					"author_url": "Author URL",
@@ -1592,13 +1655,6 @@
 				"placeholder": ""
 			},
 			{
-				"allow_backendsearch": false,
-				"show_column_filter": false,
-				"allow_bulkedit": false,
-				"allow_quickedit": false,
-				"show_column": false,
-				"show_column_weight": 1000,
-				"show_column_sortable": false,
 				"key": "field_65ee2e1892753",
 				"label": "Custom URL",
 				"name": "custom_url",
@@ -1625,13 +1681,6 @@
 					"class": "",
 					"id": ""
 				},
-				"default_value": "",
-				"maxlength": "",
-				"placeholder": "",
-				"prepend": "",
-				"append": ""
-			},
-			{
 				"allow_backendsearch": false,
 				"show_column_filter": false,
 				"allow_bulkedit": false,
@@ -1639,6 +1688,13 @@
 				"show_column": false,
 				"show_column_weight": 1000,
 				"show_column_sortable": false,
+				"default_value": "",
+				"maxlength": "",
+				"placeholder": "",
+				"prepend": "",
+				"append": ""
+			},
+			{
 				"key": "field_65ee3410e76cf",
 				"label": "New Tab",
 				"name": "new_tab",
@@ -1660,13 +1716,6 @@
 					"class": "acf-hide-label",
 					"id": ""
 				},
-				"message": "Open link in new tab",
-				"default_value": 0,
-				"ui": 0,
-				"ui_on_text": "",
-				"ui_off_text": ""
-			},
-			{
 				"allow_backendsearch": false,
 				"show_column_filter": false,
 				"allow_bulkedit": false,
@@ -1674,6 +1723,13 @@
 				"show_column": false,
 				"show_column_weight": 1000,
 				"show_column_sortable": false,
+				"message": "Open link in new tab",
+				"default_value": 0,
+				"ui": 0,
+				"ui_on_text": "",
+				"ui_off_text": ""
+			},
+			{
 				"key": "field_65f2213285afc",
 				"label": "Apply Formatting",
 				"name": "apply_formatting",
@@ -1687,13 +1743,6 @@
 					"class": "acf-hide-label",
 					"id": ""
 				},
-				"message": "Apply paragraph formatting",
-				"default_value": 0,
-				"ui": 0,
-				"ui_on_text": "",
-				"ui_off_text": ""
-			},
-			{
 				"allow_backendsearch": false,
 				"show_column_filter": false,
 				"allow_bulkedit": false,
@@ -1701,6 +1750,13 @@
 				"show_column": false,
 				"show_column_weight": 1000,
 				"show_column_sortable": false,
+				"message": "Apply paragraph formatting",
+				"default_value": 0,
+				"ui": 0,
+				"ui_on_text": "",
+				"ui_off_text": ""
+			},
+			{
 				"key": "field_65f21b106b8dd",
 				"label": "Show filter (for developers)",
 				"name": "show_filter_instructions_for_developers",
@@ -1714,13 +1770,6 @@
 					"class": "acf-hide-label",
 					"id": ""
 				},
-				"message": "Show filter (for developers)",
-				"default_value": 0,
-				"ui": 0,
-				"ui_on_text": "",
-				"ui_off_text": ""
-			},
-			{
 				"allow_backendsearch": false,
 				"show_column_filter": false,
 				"allow_bulkedit": false,
@@ -1728,6 +1777,13 @@
 				"show_column": false,
 				"show_column_weight": 1000,
 				"show_column_sortable": false,
+				"message": "Show filter (for developers)",
+				"default_value": 0,
+				"ui": 0,
+				"ui_on_text": "",
+				"ui_off_text": ""
+			},
+			{
 				"key": "field_65f218f96b8dc",
 				"label": "Filter Usage",
 				"name": "",
@@ -1749,6 +1805,13 @@
 					"class": "acf-hide-label",
 					"id": ""
 				},
+				"allow_backendsearch": false,
+				"show_column_filter": false,
+				"allow_bulkedit": false,
+				"allow_quickedit": false,
+				"show_column": false,
+				"show_column_weight": 1000,
+				"show_column_sortable": false,
 				"message": "<p>Developers can change the value of this block using a filter, for example:<\/p>\r\n\r\n<pre class=\"code\" style=\"overflow: auto; padding: 5px; background: #00000010;\">add_filter( 'rs\/user_field\/custom_field', function( $value, $user_id, $display_field, $custom_field_key ) {\r\n    \/\/ Example values:\r\n    \/\/ $value = null\r\n    \/\/ $user_id = int(1)\r\n    \/\/ $display_field = \"custom_field\"\r\n    \/\/ $custom_field_key = \"birthday\"\r\n\r\n    \/\/ [Example] Apply date formatting to a date field\r\n    if ( $display_field == 'custom_field' && $field_key == 'birthday' ) {\r\n        $value = get_user_meta( $user_id, 'birthday', true );\r\n        if ( $value ) $value = date( 'F j, Y', strtotime($value) );\r\n    }\r\n\r\n    return $value;\r\n}, 10, 4);<\/pre>",
 				"new_lines": "wpautop",
 				"esc_html": 0
@@ -1771,6 +1834,7 @@
 		"hide_on_screen": "",
 		"active": true,
 		"description": "[RS Utility Blocks] ACF Block -> User Field",
-		"show_in_rest": 0
+		"show_in_rest": 0,
+		"qef_simple_location_rules": false
 	}
 ]

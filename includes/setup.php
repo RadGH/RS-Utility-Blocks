@@ -117,19 +117,22 @@ class RS_Utility_Blocks_Setup {
 	 */
 	public static function register_blocks( $classes ) {
 		
+		register_block_type( RS_Utility_Blocks_PATH . '/blocks/breadcrumbs/block.json');
+		
 		register_block_type( RS_Utility_Blocks_PATH . '/blocks/edit-profile/block.json');
 		
-		register_block_type( RS_Utility_Blocks_PATH . '/blocks/user-field/block.json');
-		
-		register_block_type( RS_Utility_Blocks_PATH . '/blocks/post-field/block.json');
+		register_block_type( RS_Utility_Blocks_PATH . '/blocks/link-block/block.json');
 		
 		register_block_type( RS_Utility_Blocks_PATH . '/blocks/login-form/block.json');
-		
-		register_block_type( RS_Utility_Blocks_PATH . '/blocks/link-block/block.json');
 		
 		register_block_type( RS_Utility_Blocks_PATH . '/blocks/mobile-menu-button/block.json');
 		
 		register_block_type( RS_Utility_Blocks_PATH . '/blocks/mobile-menu-container/block.json');
+		
+		register_block_type( RS_Utility_Blocks_PATH . '/blocks/post-field/block.json');
+		
+		register_block_type( RS_Utility_Blocks_PATH . '/blocks/user-field/block.json');
+		
 		
 	}
 	
