@@ -79,7 +79,6 @@ body:not(.front-end) .has-visibility::before {
 	position: absolute;
 	top: calc( 100% + 1px );
 	left: 0;
-	right: 0;
 	width: auto;
 	height: 1.5em;
 	z-index: 25;

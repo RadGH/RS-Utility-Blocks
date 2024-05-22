@@ -139,6 +139,11 @@ add_filter( 'rs/post_field', 'my_theme_post_field_date_formatting', 10, 5 );
 
 ## Changelog
 
+### 1.3.2
+* Fit visibility tooltips to left
+* Added color support to Post Field block
+* Hide mobile menu on desktop if opened before screen size change
+
 ### 1.3.1
 * Upgraded post field to include date formatting, featured image, image size, author links, and post modified time
 * Post field filters now support a 5th argument `$block` which contains the block settings.

@@ -9,6 +9,12 @@
   "supports": {
     "align": true,
     "anchor": true,
+    "color": {
+      "text": true,
+      "background": true,
+      "gradients": true,
+      "link": true
+    },
     "customClassName": true,
     "layout": false,
     "spacing": {
