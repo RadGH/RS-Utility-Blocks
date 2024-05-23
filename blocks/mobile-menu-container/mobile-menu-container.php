@@ -56,6 +56,6 @@ $atts = get_block_wrapper_attributes( $atts );
 
 echo '<'. $html_element .' '. $atts .'>';
 
-echo '<InnerBlocks template="'. esc_attr( wp_json_encode( $template ) ) .'" class="rs-mobile-menu--inner is-layout-constrained" />';
+echo '<InnerBlocks template="'. esc_attr( wp_json_encode( $template ) ) .'" class="rs-mobile-menu--inner" />';
 
 echo '</'. $html_element .'>';
