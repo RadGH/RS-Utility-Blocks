@@ -17,7 +17,17 @@ html button.rs-mobile-menu-button:not(:active) {
 	outline: none;
 }
 
-/* Custom styles */
+/* Button structure and centering */
+html button.rs-mobile-menu-button,
+html .rs-mobile-menu-button .rs--state,
+html .rs-mobile-menu-button .rs--state .rs--icon {
+	display: flex;
+	flex-direction: column;
+	place-content: center;
+	align-items: center;
+}
+
+/* Custom z-index */
 button.rs-mobile-menu-button {
 	position: relative;
 	z-index: 210;
@@ -30,10 +40,4 @@ button.rs-mobile-menu-button {
 
 .rs-mobile-menu-button:not(.open) .rs--state-close {
 	display: none;
-}
-
-/* Button structure */
-.rs-mobile-menu-button .rs--state {
-	display: flex;
-	flex-direction: column;
 }
