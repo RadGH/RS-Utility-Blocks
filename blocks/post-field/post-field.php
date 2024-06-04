@@ -69,8 +69,6 @@ $html_element = apply_filters( 'rs/post_field_element', $html_element, $post_id,
 
 // Add additional classes
 $classes = array();
-$classes[] = $is_empty ? 'has-value' : 'no-value';
-$classes[] = $url ? 'has-link' : 'no-link';
 
 if ( $display_field ) {
 	$classes[] = 'display-field--' . $display_field;
@@ -79,6 +77,10 @@ if ( $display_field ) {
 if ( $display_field === 'custom_field' && $custom_field_key ) {
 	$classes[] = 'custom-field-key--' . $custom_field_key;
 }
+
+$classes[] = ! $is_empty ? 'has-value' : 'no-value';
+
+$classes[] = $url ? 'has-link' : 'no-link';
 
 // Start output
 $atts = array(
