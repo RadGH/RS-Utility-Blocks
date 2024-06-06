@@ -10,6 +10,11 @@
  * @global   array $context The context provided to the block by the post or it's parent block.
  */
 
+// In the editor, if no post is defined then look up the latest post with a matching post type
+if ( ! $post_id && $is_preview ) {
+	$post_id = RS_Utility_Blocks_Functions::get_post_id_for_block_editor( $block );
+}
+
 // The target post is the one which the field is based off.
 // It may not match the queried post being displayed on the page.
 $target_post = null; // WP_Post

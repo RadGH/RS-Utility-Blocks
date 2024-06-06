@@ -13,6 +13,11 @@
 $separator = get_field( 'separator', $block['id'] );
 $show_home = get_field( 'show_home', $block['id'] );
 
+// In the editor, if no post is defined then look up the latest post with a matching post type
+if ( ! $post_id && $is_preview ) {
+	$post_id = RS_Utility_Blocks_Functions::get_post_id_for_block_editor( $block );
+}
+
 // Get breadcrumb trail as array
 $args = array(
 	'home' => $show_home,

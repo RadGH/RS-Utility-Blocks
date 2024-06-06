@@ -96,4 +96,37 @@ class RS_Utility_Blocks_Functions {
 		return true;
 	}
 	
+	/**
+	 * Get the latest post of the given post type for the block editor.
+	 * This should only be used on the block editor.
+	 *
+	 * @param array $block The block data
+	 *
+	 * @return int|false
+	 */
+	public static function get_post_id_for_block_editor( $block ) {
+		$post_type = get_post_type();
+		
+		if ( ! $post_type ) {
+			if ( isset($_POST['rsub_template_post_type']) ) {
+				$post_type = stripslashes( $_POST['rsub_template_post_type'] );
+			}
+		}
+		
+		// Get the latest post of the given post type
+		if ( $post_type ) {
+			$p = get_posts(array(
+				'post_type' => $post_type,
+				'posts_per_page' => 1,
+				'orderby' => 'date',
+				'order' => 'DESC',
+			));
+			
+			if ( $p ) return $p[0]->ID;
+		}
+		
+		// No post found
+		return false;
+	}
+	
 }

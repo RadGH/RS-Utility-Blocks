@@ -28,7 +28,7 @@
 				"label": "Show home",
 				"name": "show_home",
 				"aria-label": "",
-				"type": "text",
+				"type": "true_false",
 				"instructions": "",
 				"required": 0,
 				"conditional_logic": 0,
@@ -37,11 +37,15 @@
 					"class": "acf-hide-label",
 					"id": ""
 				},
-				"default_value": "Show home",
+				"message": "Include a link to Home as the first item",
+				"default_value": 1,
 				"maxlength": "",
 				"placeholder": "",
 				"prepend": "",
-				"append": ""
+				"append": "",
+				"ui": 0,
+				"ui_on_text": "",
+				"ui_off_text": ""
 			}
 		],
 		"location": [
