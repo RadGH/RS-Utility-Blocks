@@ -78,20 +78,22 @@ class RS_Utility_Blocks_Functions {
 	 * @return bool
 	 */
 	public static function compare_urls( $url1, $url2, $compare_query = false, $compare_fragment = false ) {
+		if ( ! $url1 || ! $url2 ) return false;
+		
 		$url1 = parse_url( $url1 );
 		$url2 = parse_url( $url2 );
 		
 		// Compare the host
-		if ( $url1['host'] && $url2['host'] && $url1['host'] !== $url2['host'] ) { return false; }
+		if ( !empty($url1['host']) && !empty($url2['host']) && $url1['host'] !== $url2['host'] ) return false;
 		
 		// Compare the path
-		if ( $url1['path'] !== $url2['path'] ) return false;
+		if ( !empty($url1['path']) && !empty($url2['path']) && $url1['path'] !== $url2['path'] ) return false;
 		
 		// Compare the query string
-		if ( $compare_query && $url1['query'] !== $url2['query'] ) return false;
+		if ( $compare_query && !empty($url1['query']) && !empty($url2['query']) && $url1['query'] !== $url2['query'] ) return false;
 		
 		// Compare the fragment
-		if ( $compare_fragment && $url1['fragment'] !== $url2['fragment'] ) return false;
+		if ( $compare_fragment && !empty($url1['fragment']) && !empty($url2['fragment']) && $url1['fragment'] !== $url2['fragment'] ) return false;
 		
 		return true;
 	}
