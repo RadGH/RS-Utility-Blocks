@@ -11,6 +11,7 @@
  */
 
 $separator = get_field( 'separator', $block['id'] );
+$link_current_page = get_field( 'link_current_page', $block['id'] );
 $show_home = get_field( 'show_home', $block['id'] );
 
 // In the editor, if no post is defined then look up the latest post with a matching post type
@@ -20,6 +21,7 @@ if ( ! $post_id && $is_preview ) {
 
 // Get breadcrumb trail as array
 $args = array(
+	'link_current_page' => $link_current_page,
 	'home' => $show_home,
 );
 $breadcrumbs = RS_Utility_Blocks_Functions::get_breadcrumbs( $post_id, $args );
@@ -61,9 +63,20 @@ foreach( $breadcrumbs as $i => $crumb ) {
 	
 	?>
 	<div class="rs-breadcrumbs--item">
-		<a href="<?php echo esc_attr( $c_url ); ?>" class="rs-breadcrumbs--item__content">
-			<span class="rs-breadcrumbs--item__label"><?php echo esc_html( $c_title ); ?></span>
-		</a>
+		
+		<?php if ( $c_url ) { ?>
+			<a href="<?php echo esc_attr( $c_url ); ?>" class="rs-breadcrumbs--item__content">
+		<?php }else{ ?>
+			<span class="rs-breadcrumbs--item__content no-link">
+		<?php } ?>
+
+		<span class="rs-breadcrumbs--item__label"><?php echo esc_html( $c_title ); ?></span>
+		
+		<?php if ( ! $c_url ) { ?>
+			</span>
+		<?php }else{ ?>
+			</a>
+		<?php } ?>
 	</div>
 	<?php
 	

@@ -24,6 +24,30 @@
 				"append": ""
 			},
 			{
+				"key": "field_5664a67c5f805",
+				"label": "Link to current page",
+				"name": "link_current_page",
+				"aria-label": "",
+				"type": "true_false",
+				"instructions": "",
+				"required": 0,
+				"conditional_logic": 0,
+				"wrapper": {
+					"width": "",
+					"class": "acf-hide-label",
+					"id": ""
+				},
+				"message": "Include a link to the current page",
+				"default_value": 0,
+				"maxlength": "",
+				"placeholder": "",
+				"prepend": "",
+				"append": "",
+				"ui": 0,
+				"ui_on_text": "",
+				"ui_off_text": ""
+			},
+			{
 				"key": "field_664e674c56c03",
 				"label": "Show home",
 				"name": "show_home",

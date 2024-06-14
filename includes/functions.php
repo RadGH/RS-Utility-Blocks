@@ -4,6 +4,7 @@ class RS_Utility_Blocks_Functions {
 	
 	public static function get_breadcrumbs( $post_id, $settings = array() ) {
 		$settings = shortcode_atts(array(
+			'link_current_page' => false,
 			'home' => true,
 			'home_text' => 'Home',
 			'archive' => true,
@@ -12,17 +13,19 @@ class RS_Utility_Blocks_Functions {
 		$breadcrumbs = array();
 		
 		// Get the post type
-		$post_type = get_post_type( $post_id );
+		$post_type = $post_id ? get_post_type( $post_id ) : false;
 		
 		// Get the post's ancestors
-		$ancestors = get_post_ancestors( $post_id );
+		$ancestors = $post_id ? get_post_ancestors( $post_id ) : false;
 		
 		// Add the post itself to the breadcrumbs
-		$breadcrumbs[] = array(
-			'post_id' => $post_id,
-			'title' => get_the_title( $post_id ),
-			'url' => get_permalink( $post_id ),
-		);
+		if ( $post_id ) {
+			$breadcrumbs[] = array(
+				'post_id' => $post_id,
+				'title' => get_the_title( $post_id ),
+				'url' => $settings['link_current_page'] ? get_permalink( $post_id ) : false,
+			);
+		}
 		
 		// Add the post's ancestors to the breadcrumbs
 		if ( $ancestors ) {
