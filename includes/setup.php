@@ -414,9 +414,7 @@ class RS_Utility_Blocks_Setup {
 	 * @return string|false
 	 */
 	public static function get_post_field( $post, $display_field, $custom_field_key, $block ) {
-		if ( ! $post ) return false;
-	
-		$post_id = $post->ID;
+		$post_id = $post instanceof WP_Post ? $post->ID : false;
 		
 		$fields = self::get_post_display_fields();
 		$field = isset($fields[ $display_field ]) ? $fields[ $display_field ] : false;
@@ -448,7 +446,7 @@ class RS_Utility_Blocks_Setup {
 		
 		if ( $output == 'post' ) {
 			// Get the value of the post field
-			$value = $post->{ $display_field };
+			$value = $post ? $post->{ $display_field } : false;
 			
 			switch( $display_field ) {
 				

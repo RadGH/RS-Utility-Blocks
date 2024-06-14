@@ -1509,7 +1509,7 @@ add_action( 'acf/include_fields', function() {
 		}
 
 		return $value;
-}, 10, 4);</pre>',
+}, 10, 5);</pre>',
 				'new_lines' => 'wpautop',
 				'esc_html' => 0,
 			),
