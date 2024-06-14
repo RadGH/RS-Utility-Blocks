@@ -429,19 +429,19 @@ class RS_Utility_Blocks_Setup {
 		// Allow a filter to use a custom value
 		if ( has_filter('rs/post_field') ) {
 			$value = apply_filters( 'rs/post_field', null, $post_id, $display_field, $custom_field_key, $block );
-			if ( $value !== null ) return $value;
+			if ( $value !== null ) return self::apply_prefix_and_suffix( $value, $block );
 		}
 		
 		// Allow a filter to use a custom value, including field key in the filter
 		if ( has_filter('rs/post_field/' . $display_field) ) {
 			$value = apply_filters( 'rs/post_field/' . $display_field, null, $post_id, $display_field, $custom_field_key, $block );
-			if ( $value !== null ) return $value;
+			if ( $value !== null ) return self::apply_prefix_and_suffix( $value, $block );
 		}
 		
 		// Allow a filter to use a custom value, including field key in the filter
 		if ( $output == 'custom_field' && has_filter('rs/post_field/custom_field/' . $custom_field_key) ) {
 			$value = apply_filters( 'rs/post_field/' . $custom_field_key, null, $post_id, $display_field, $custom_field_key, $block );
-			if ( $value !== null ) return $value;
+			if ( $value !== null ) return self::apply_prefix_and_suffix( $value, $block );
 		}
 		
 		if ( $output == 'post' ) {
@@ -507,6 +507,27 @@ class RS_Utility_Blocks_Setup {
 		
 		// Expand shortcodes in the result
 		if ( $value ) $value = do_shortcode( $value );
+		
+		// Apply prefix and suffix
+		$value = self::apply_prefix_and_suffix( $value, $block );
+		
+		return $value;
+	}
+	
+	/**
+	 * Apply prefix and suffix to the result, if enabled in the settings
+	 *
+	 * @param $value
+	 * @param $settings
+	 *
+	 * @return void
+	 */
+	public static function apply_prefix_and_suffix( $value, $settings ) {
+		$prefix = get_field( 'prefix', $settings['id'] );
+		$suffix = get_field( 'suffix', $settings['id'] );
+		
+		if ( $prefix ) $value = $prefix . $value;
+		if ( $suffix ) $value = $value . $suffix;
 		
 		return $value;
 	}
