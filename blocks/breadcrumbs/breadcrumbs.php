@@ -62,7 +62,7 @@ foreach( $breadcrumbs as $i => $crumb ) {
 	}
 	
 	?>
-	<div class="rs-breadcrumbs--item">
+	<div class="rs-breadcrumbs--item <?php echo $is_active ? 'active' : ''; ?>">
 		
 		<?php if ( $c_url ) { ?>
 			<a href="<?php echo esc_attr( $c_url ); ?>" class="rs-breadcrumbs--item__content">
