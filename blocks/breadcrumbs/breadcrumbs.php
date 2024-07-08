@@ -52,7 +52,7 @@ foreach( $breadcrumbs as $i => $crumb ) {
 	
 	// Disable links on the editor
 	if ( $is_preview ) {
-		$c_url = 'javascript:void();';
+		$c_url = 'javascript:void(0);';
 	}
 	
 	if ( $c_post_id ) {
