@@ -43,20 +43,25 @@ domReady(() => {
 	/**
 	 * Add the post type of the current post to the ACF block fetch request for RS Utility Blocks
 	 */
-	jQuery(document).on('ajaxSend', function(event, xhr, settings) {
-		let data = settings.data || '';
+	if ( typeof jQuery !== 'undefined' ) {
+		jQuery(document).on('ajaxSend', function(event, xhr, settings) {
+			let data = settings.data || '';
 
-		// Check if acf/ajax/fetch-block
-		let is_acf_ajax = data && data.indexOf('acf%2Fajax%2Ffetch-block') !== -1;
-		if ( ! is_acf_ajax ) return;
+			// Check if acf/ajax/fetch-block
+			let is_acf_ajax = data && data.indexOf('acf%2Fajax%2Ffetch-block') !== -1;
+			if ( ! is_acf_ajax ) return;
 
-		// Check if rs-utility-blocks
-		let is_rs_utility_blocks = data && data.indexOf('block=%7B%22name%22%3A%22rs-utility-blocks') !== -1;
-		if ( ! is_rs_utility_blocks ) return;
+			// Check if rs-utility-blocks
+			let is_rs_utility_blocks = data && data.indexOf('block=%7B%22name%22%3A%22rs-utility-blocks') !== -1;
+			if ( ! is_rs_utility_blocks ) return;
 
-		// Add post type
-		let post_type = get_template_post_type();
+			// Add post type to the request
+			let post_type = get_template_post_type();
+			if ( post_type === 'wp_template' || post_type === 'wp_template_part' ) {
+				post_type = 'page';
+			}
 
-		settings.data += '&rsub_template_post_type=' + post_type;
-	});
+			settings.data += '&rsub_template_post_type=' + post_type;
+		});
+	}
 });
