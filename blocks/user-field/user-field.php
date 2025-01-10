@@ -34,6 +34,7 @@ $html_element = apply_filters( 'rs/user_field_element', $html_element, $user_id,
 $classes = array();
 $classes[] = $value ? 'has-value' : 'no-value';
 $classes[] = $url ? 'has-link' : 'no-link';
+$classes[] = $apply_formatting ? 'has-p-formatting' : 'no-p-formatting';
 
 if ( $display_field ) {
 	$classes[] = 'display-field--' . $display_field;

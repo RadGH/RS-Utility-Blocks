@@ -87,6 +87,8 @@ $classes[] = ! $is_empty ? 'has-value' : 'no-value';
 
 $classes[] = $url ? 'has-link' : 'no-link';
 
+$classes[] = $apply_formatting ? 'has-p-formatting' : 'no-p-formatting';
+
 // Start output
 $atts = array(
 	'class' => implode(' ', $classes),
