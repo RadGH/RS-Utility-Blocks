@@ -139,6 +139,9 @@ add_filter( 'rs/post_field', 'my_theme_post_field_date_formatting', 10, 5 );
 
 ## Changelog
 
+### 1.3.5
+* Added fallback for `post_excerpt` if blank, to use 55 words from `post_content`.
+
 ### 1.3.4
 * Improved block editor display for the breadcrumb and post field blocks. For singular and archive templates, it should now use the correct post type based on the page template.
 
