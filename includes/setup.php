@@ -444,6 +444,10 @@ class RS_Utility_Blocks_Setup {
 			if ( $value !== null ) return self::apply_prefix_and_suffix( $value, $block );
 		}
 		
+		// Date format (optional)
+		$date_format = get_field( 'date_format', $block['id'] );
+		if ( $date_format == 'custom' ) $date_format = get_field( 'date_format_custom', $block['id'] );
+		
 		if ( $output == 'post' ) {
 			// Get the value of the post field
 			$value = $post ? $post->{ $display_field } : false;
@@ -461,17 +465,7 @@ class RS_Utility_Blocks_Setup {
 				case 'post_date_gmt':
 				case 'post_modified':
 				case 'post_modified_gmt':
-					$format = get_field( 'date_format', $block['id'] );
-					if ( $format == 'custom' ) $format = get_field( 'date_format_custom', $block['id'] );
-					if ( ! $format ) $format = get_option( 'date_format' );
-					
-					if ( $format == 'relative' ) {
-						$value = human_time_diff( strtotime( $value ) );
-					}else{
-						$format = apply_filters( 'rs/date_format', $format, 'post', $post_id, $display_field, $custom_field_key, $block );
-						$value = date_i18n( $format, strtotime( $value ) );
-					}
-					
+					if ( ! $date_format ) $date_format = get_option( 'date_format' );
 					break;
 					
 				// Comment Count default
@@ -512,6 +506,11 @@ class RS_Utility_Blocks_Setup {
 				
 			}
 			
+		}
+		
+		// Apply date format, if provided
+		if ( $date_format ) {
+			$value = self::apply_date_format( $value, $date_format, $block, $post_id, $display_field, $custom_field_key );
 		}
 		
 		// Expand shortcodes in the result
@@ -845,6 +844,36 @@ class RS_Utility_Blocks_Setup {
 		if ( $value === false ) return true;
 		if ( is_array($value) && empty($value) ) return true;
 		return false;
+	}
+	
+	/**
+	 * Apply a date format to a date string
+	 *
+	 * @param $value
+	 * @param $date_format
+	 * @param $block
+	 * @param $post_id
+	 * @param $display_field
+	 * @param $custom_field_key
+	 *
+	 * @return string
+	 */
+	public static function apply_date_format( $value, $date_format, $block, $post_id, $display_field, $custom_field_key ) {
+		if ( ! $value ) return $value;
+		
+		// Check if $value is a timestamp or date
+		if ( ! is_numeric( $value ) ) {
+			$value = strtotime( $value );
+		}
+		
+		if ( $date_format == 'relative' ) {
+			$value = human_time_diff( $value );
+		}else{
+			$date_format = apply_filters( 'mac/date_format', $date_format, 'post', $post_id, $display_field, $custom_field_key, $block );
+			$value = date_i18n( $date_format, $value );
+		}
+		
+		return $value;
 	}
 	
 }
