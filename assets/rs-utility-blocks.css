@@ -131,3 +131,14 @@ body:not(.front-end) .is-selected.has-visibility.hide-on-desktop::before        
 .rs-notice > :last-child {
 	margin-bottom: 0;
 }
+
+/* Remove trailing margin on Post Field and User Field blocks if paragraph formatting is enabled */
+.wp-block-rs-utility-blocks-post-field.has-p-formatting > :first-child,
+.wp-block-rs-utility-blocks-user-field.has-p-formatting > :first-child {
+	margin-top: 0;
+}
+
+.wp-block-rs-utility-blocks-post-field.has-p-formatting > :last-child,
+.wp-block-rs-utility-blocks-user-field.has-p-formatting > :last-child {
+	margin-bottom: 0;
+}
