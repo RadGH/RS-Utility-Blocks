@@ -479,6 +479,15 @@ class RS_Utility_Blocks_Setup {
 					if ( ! $value ) $value = '0';
 					break;
 				
+				// Post excerpt
+				case 'post_excerpt':
+					if ( strlen($value) < 1 ) {
+						$value = wp_trim_words( $post->post_content, 55, '&hellip;' );
+					}
+					
+					$value = apply_filters( 'the_excerpt', $value );
+					break;
+				
 					
 			}
 			
