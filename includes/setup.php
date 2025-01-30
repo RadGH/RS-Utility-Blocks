@@ -18,8 +18,11 @@ class RS_Utility_Blocks_Setup {
 		// Enqueue assets on the front-end.
 		add_action( 'wp_enqueue_scripts', array( __CLASS__, 'enqueue_public_assets' ) );
 		
-		// Enqueue scripts for the block editor
-		add_action( 'enqueue_block_assets', array( __CLASS__, 'enqueue_block_assets' ) );
+		// Enqueue assets used for custom blocks (front-end and back-end)
+		add_action( 'enqueue_block_assets', array( __CLASS__, 'enqueue_block_editor_shared_assets' ) );
+		
+		// Enqueue assets for the block editor (back-end only)
+		add_action( 'enqueue_block_editor_assets', array( __CLASS__, 'enqueue_block_editor_admin_assets' ) );
 		
 		// Add body classes for the theme.
 		add_filter( 'body_class', array( __CLASS__, 'add_body_classes' ) );
@@ -81,13 +84,22 @@ class RS_Utility_Blocks_Setup {
 	}
 	
 	/**
-	 * Enqueue block editor assets, wherever blocks are used
+	 * Enqueue assets used for custom blocks (front-end and back-end)
 	 *
 	 * @return void
 	 */
-	public static function enqueue_block_assets() {
+	public static function enqueue_block_editor_shared_assets() {
 		
 		wp_enqueue_style( 'rs-utility-blocks' );
+		
+	}
+	
+	/**
+	 * Enqueue assets for the block editor (back-end only)
+	 *
+	 * @return void
+	 */
+	public static function enqueue_block_editor_admin_assets() {
 		
 		wp_enqueue_script( 'rs-utility-blocks-block-editor' );
 		
