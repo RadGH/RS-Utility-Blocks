@@ -139,6 +139,9 @@ add_filter( 'rs/post_field', 'my_theme_post_field_date_formatting', 10, 5 );
 
 ## Changelog
 
+### 1.3.6
+* Changed the block editor script to only be included on the block editor (back-end). This indirectly fixes a JavaScript error: `Uncaught (in promise) {code: 'rest_not_logged_in'}`"`
+
 ### 1.3.5
 * Added fallback for `post_excerpt` if blank, to use 55 words from `post_content`.
 * Enabled date format to apply to custom fields.
